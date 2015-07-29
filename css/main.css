@@ -2,38 +2,21 @@
     height: 100%;
 }
 
-#particles-js, body, html {
-  background:#18111D;
-}
-
 .container-fluid {
     position: absolute;
     width: 100%;
 }
 
-body {
-    color: #3A7830;
-}
-
-h1 {
-    color: #DBFFF9;
-}
-
 #mc_embed_signup input.email {
     width: 75%;
     display: inline-block;
-    background-color: rgba(27, 43, 19, .3);
-    border: .5px #262626 solid;
 }
 
 #mc_embed_signup input.button {
     width: 20%;
     display: inline-block;
-    background: none;
-    border: .5px #262626 solid;
-    color: #999;
-    background: #243A1A;
 }
+
 /*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
