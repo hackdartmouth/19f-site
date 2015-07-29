@@ -1,7 +1,7 @@
 # hackdartmouth.github.io
 The HackDartmouth website: [hackdartmouth.io](http://hackdartmouth.io/)
 
-[Development wiki](https://github.com/hackdartmouth/hackdartmouth.github.io/wiki/HackDartmouth-Website-Development-Guide)
+[Development wiki](https://github.com/hackdartmouth/hackdartmouth.github.io/wiki)
 
 ### Branches
 * [master](https://github.com/hackdartmouth/hackdartmouth.github.io/tree/master) - what's currently live on hackdartmouth.io
