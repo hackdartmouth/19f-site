@@ -4,18 +4,30 @@
 
 .navigation {
     height: 10vh;
+    background-color: #EBF5F4;
 }
 
 .about {
     height: 75vh;
 }
 
+.about .section-header {
+    color: #003978;
+}
+
 .schedule {
     height: 100vh;
+    background-color: #F4F2F1;
+}
+
+.schedule .section-header {
+    color: #328781;
 }
 
 .faq {
     height: 75vh;
+    background-color: #1E1F1B;
+    color: white;
 }
 
 .apply {
@@ -28,7 +40,7 @@
     border: solid white 10px;
     height: 100px;
     line-height: 100px;
-    max-width: 500px;
+    max-width: 350px;
     width: 90vw;
     display: inline-block;
     background-color: #67999C;
