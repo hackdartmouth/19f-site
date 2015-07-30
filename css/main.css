@@ -1,7 +1,3 @@
-.row {
-    border: solid black 1px; /* temp */
-}
-
 .welcome {
     height: 90vh;
 }
@@ -23,9 +19,21 @@
 }
 
 .apply {
-    height: 50vh;
+    min-height: 500px;
+    color: white;
+    background-color: #99CACD;
 }
 
+.apply-button {
+    border: solid white 10px;
+    height: 100px;
+    line-height: 100px;
+    max-width: 500px;
+    width: 90vw;
+    display: inline-block;
+    background-color: #67999C;
+    cursor: pointer;
+}
 
 .footer {
     height: 100px;
