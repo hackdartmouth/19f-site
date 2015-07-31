@@ -2,6 +2,12 @@
     height: 90vh;
 }
 
+.section-header {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .navigation {
     height: 10vh;
     background-color: #EBF5F4;
@@ -16,7 +22,8 @@
 }
 
 .schedule {
-    height: 100vh;
+    min-height: 100vh;
+    text-align: left;
     background-color: #F4F2F1;
 }
 
