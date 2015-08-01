@@ -18,7 +18,8 @@ window.PineSchedule.load = function(dom_id, data) {
     HEADER_ALIGNMENT: data.optionals.header_alignment ? data.optionals.header_alignment : "right",
     HEADER_FONT_SIZE: data.optionals.header_font_size ? data.optionals.header_font_size : "25px",
     HEADER_FONT: data.optionals.header_font ? data.optionals.header_font : "Verdana, Geneva, sans-serif",
-    BORDERS: !!data.optionals.borders
+    BORDERS: !!data.optionals.borders,
+    SHOW_GRID_ON_EVENT: !!data.optionals.show_grid_on_event
   };
 
   var container = d3.select(dom_id).style("font-family", DEFAULT.HEADER_FONT);
@@ -95,10 +96,15 @@ window.PineSchedule.load = function(dom_id, data) {
       return this.time * 10 % 10 === 0;
     };
     this.get_border_top = function() {
-      if (this.is_top_of_hour()) {
-        return "dotted #D3D3D3 1px";
-      } else {
-        return "dashed #D3D3D3 1px";
+      if (DEFAULT.SHOW_GRID_ON_EVENT ||
+          !this.event ||
+          this.display_type == TB_DISPLAY_TYPE.ONE_LINE ||
+          this.display_type == TB_DISPLAY_TYPE.MULTI_LINE_FIRST) {
+        if (this.is_top_of_hour()) {
+          return "dotted #D3D3D3 1px";
+        } else {
+          return "dashed #D3D3D3 1px";
+        }
       }
     };
     this.get_pretty_time = function() {
