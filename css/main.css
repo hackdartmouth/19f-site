@@ -33,8 +33,8 @@
 }
 
 .faq {
-    height: 75vh;
-    background-color: #1E1F1B;
+    /* height: 75vh; */
+    background-color: rgb(41, 42, 37);
     color: white;
 }
 
@@ -339,5 +339,65 @@ textarea {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+}
+
+.sublime {
+    color: rgb(126, 127, 124);
+    padding-left: 0em;
+    font: monospace;
+}
+
+.sublime li {
+    list-style-type: none;
+}
+
+.c-header {
+    float: left;
+    clear: both;
+}
+
+.preprocessor {
+    color: rgb(232, 68, 112);
+}
+
+.file {
+    color: rgb(232, 223, 110);
+}
+
+.faq-block {
+    text-align: left;
+}
+
+.answer {
+    color: rgb(126, 127, 124);
+    padding-top: 0.7em;
+}
+
+.keyword {
+    color: rgb(93, 205, 199);
+}
+
+.params {
+    color: rgb(232, 223, 110);
+}
+.function {
+    color: rgb(162, 201, 59);
+}
+
+.closing-brace {
+    padding-top: 0.5em;
+}
+
+.faq-body {
+}
+
+#faq-title {
+    clear: both;
+}
+
+@media (max-width: 780px ){
+    .sublime { 
+        margin-right: 5%;
     }
 }
