@@ -12,7 +12,7 @@ PINE_SCHEDULE = {
 
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "FRIDAY",
+  "day_of_week": "FRI",
   "month": "OCT",
   "day": 2,
   "range": PINE_SCHEDULE.RANGE,
@@ -70,7 +70,7 @@ PineSchedule.load(".day-1", {
 
 PineSchedule.load(".day-2", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "SATURDAY",
+  "day_of_week": "SAT",
   "month": "OCT",
   "day": 3,
   "range": PINE_SCHEDULE.RANGE,
@@ -128,7 +128,7 @@ PineSchedule.load(".day-2", {
 
 PineSchedule.load(".day-3", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "SUNDAY",
+  "day_of_week": "SUN",
   "month": "OCT",
   "day": 4,
   "range": PINE_SCHEDULE.RANGE,

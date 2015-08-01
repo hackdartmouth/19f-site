@@ -25,8 +25,8 @@ window.PineSchedule.load = function(dom_id, data) {
   var table = container.append("table");
 
   var header = table.append("thead");
-  header.append("th");
-  header_data = header.append("th");
+  header.append("td");
+  header_data = header.append("td");
   header_data.style("text-align", DEFAULT.HEADER_ALIGNMENT).style("font-size", DEFAULT.HEADER_FONT_SIZE);
   header_data.append("b").text(data.day_of_week);
   header_data.append("span").text(", " + data.month + " " + data.day);
@@ -44,7 +44,7 @@ window.PineSchedule.load = function(dom_id, data) {
       if (time_blocks_for_event < 1) {
         console.log("PineSchedule: skipping event " + e.name + " because duration");
         continue;
-      } 
+      }
 
       time_block_display_type = TB_DISPLAY_TYPE.NONE;
       if (time_blocks_for_event === 1 && time_block_number === 1) {
