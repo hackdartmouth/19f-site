@@ -348,6 +348,11 @@ textarea {
     font: monospace;
 }
 
+.sublime ul {
+    padding-left: 80%;
+    box-sizing: border-box;
+}
+
 .sublime li {
     list-style-type: none;
 }
@@ -370,12 +375,13 @@ textarea {
 }
 
 .answer {
-    color: rgb(126, 127, 124);
+    color: #ffffff;
     padding-top: 0.7em;
 }
 
 .keyword {
     color: rgb(93, 205, 199);
+    font-style: italic;
 }
 
 .params {
@@ -389,10 +395,8 @@ textarea {
     padding-top: 0.5em;
 }
 
-.faq-body {
-}
-
 #faq-title {
+    color: rgb(126, 127, 124);
     clear: both;
 }
 

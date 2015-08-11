@@ -125,3 +125,43 @@ PineSchedule.load(".day-2", {
     }
   ]
 });
+
+$(document).ready(function(){
+  var faqHeight = $('.faq').height();
+  var faqWidth = $('.faq').width();
+  var lineHeight = $('#linecount-start').height();
+  var lineCount = faqHeight/lineHeight;
+
+  for(i = 1; i < lineCount; i++){
+    var newNode = document.createElement('li');
+    var innerContent = document.createTextNode(i);
+    newNode.appendChild(innerContent);
+    document.getElementById('sidebar').appendChild(newNode);
+  }
+});
+
+// dynamically update line numbers
+$(window).resize(function(){
+  // clear out line counts on resize
+  var topNode = document.getElementById('sidebar');
+  while(topNode.firstChild){
+    topNode.removeChild(topNode.firstChild);
+  }
+
+  var firstNode = document.createElement('li');
+  firstNode.id = 'linecount-start';
+  firstNode.innerHTML = '&nbsp;';
+  document.getElementById('sidebar').appendChild(firstNode);
+
+  var faqHeight = $('.faq').height();
+  var faqWidth = $('.faq').width();
+  var lineHeight = $('#linecount-start').height();
+  var lineCount = faqHeight/lineHeight;
+
+  for(i = 1; i < lineCount; i++){
+    var newNode = document.createElement('li');
+    var innerContent = document.createTextNode(i);
+    newNode.appendChild(innerContent);
+    document.getElementById('sidebar').appendChild(newNode);
+  }
+});
