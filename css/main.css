@@ -36,6 +36,7 @@
     /* height: 75vh; */
     background-color: rgb(41, 42, 37);
     color: white;
+    font-family: menlo;
 }
 
 .apply {
@@ -404,4 +405,17 @@ textarea {
     .sublime { 
         margin-right: 5%;
     }
+}
+
+.sponsors {
+    background-color: #72B9BC;
+}
+
+.sponsor-block {
+    overflow: hidden;
+}
+
+.redwood {
+    max-width: 100%;
+    max-height: 100%;
 }
