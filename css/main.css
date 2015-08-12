@@ -42,7 +42,7 @@ body {
     font-size: 5vh;
 }
 
-.about {
+#about {
     min-height: 75vh;
     font-family: Menlo;
     font-size: 1.2em;
