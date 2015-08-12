@@ -10,8 +10,8 @@ body {
 
 #cloud {
     float: right;
-    width: 20vh;
-    height: 20vh;
+    position: absolute;
+    margin-left: 65%;
     overflow: hidden;
 }
 
@@ -19,12 +19,16 @@ body {
     float: right;
     display: none;
     position: fixed;
-    z-index: 999;
     margin-left: -20%;
+    z-index: 999;
 }
 
 #date {
     margin-top: 18%;
+}
+
+#placeholderNav {
+    display: none;
 }
 
 .active {
@@ -123,7 +127,7 @@ body {
 }
 
 #apply {
-    min-height: 500px;
+    min-height: 600px;
     color: white;
     background-color: #99CACD;
 }

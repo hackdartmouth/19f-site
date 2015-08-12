@@ -135,19 +135,47 @@ function hehehe(){
     nyanCat.play();
     playing = true;
     var nyanFly = setInterval(function(){
-  
-  var timer = $("#lol").stop().animate({"margin-left" : "+=60%"}, 5000);
-  
-  if ($("#lol").offset().left > $(window).width()) {
-    clearInterval(nyanFly);
-  }
-}, 5000);
-    
+      var timer = $("#lol").stop().animate({"margin-left" : "+=60%"}, 5000);
+      if ($("#lol").offset().left > $(window).width()) {
+        clearInterval(nyanFly);
+      }
+    }, 5000);
   } else {
     $("#lol").css("display","none");
     nyanCat.pause();
     playing = false;
   }
+}
+
+function jumpToSection(targetSection){
+  var navbarHeight = $("#myNav").height();
+  var controlString = null;
+  switch(targetSection){
+    case "s1":
+      controlString = "#about";
+      break;
+    case "s2":
+      controlString = "#schedule";
+      break;
+    case "s3":
+      controlString = "#faq";
+      break;
+    case "s4":
+      controlString = "#sponsors";
+      break;
+    case "s5":
+      controlString = "#apply";
+      break;
+    default:
+      controlString = "#";
+  }
+  var sectionOffset = $(controlString).offset().top;
+  if (targetSection == "s1"){
+    //sectionOffset -= navbarHeight;
+  }
+  $("html, body").animate({
+    scrollTop : sectionOffset - navbarHeight + 1
+  }, 1000);
 }
 
 $(document).ready(function(){
@@ -156,7 +184,8 @@ $(document).ready(function(){
   var lineHeight = $('#linecount-start').height();
   var lineCount = faqHeight/lineHeight;
   var scrolledDown = false;
-  var navBar = $('.navigation')
+  var placeholderNavBar = $('#placeholderNav')
+  var navBar = $('#myNav')
   var active_nav_button = undefined
 
   refreshNavBar()
@@ -171,9 +200,11 @@ $(document).ready(function(){
   function refreshNavBar() {
     scrollPosition = $(window).scrollTop()
     if(scrollPosition >= $('#welcome').height()) {
-      navBar.addClass('fixed-nav-bar')
+      placeholderNavBar.css('display', 'block');
+      navBar.addClass('fixed-nav-bar');
     } else {
-      navBar.removeClass('fixed-nav-bar')
+      placeholderNavBar.css('display', 'none');
+      navBar.removeClass('fixed-nav-bar');
     }
 
     scrollPosition = scrollPosition + $(window).height() / 10 + 80
