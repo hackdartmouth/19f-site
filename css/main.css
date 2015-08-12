@@ -1,5 +1,11 @@
 .welcome {
+    background-image: url('../img/header.png');
+    background-size: 100% 100%;
     height: 90vh;
+}
+
+#date {
+    margin-top: 18%;
 }
 
 .section-header {
@@ -14,11 +20,51 @@
 }
 
 .about {
-    height: 75vh;
+    min-height: 75vh;
+    font-family: Menlo;
+    font-size: 1.2em;
 }
 
 .about .section-header {
     color: #003978;
+    overflow: hidden;
+}
+
+.background-left {
+    background-image: url('../img/tabletop.png');
+    background-size: 100% 100%;
+    height: 55vh;
+    width: 55vh;
+    float: left;
+    margin-left: -13%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-right {
+    max-height: 45vh;
+    max-width: 70vh;
+    float: right;
+    margin-left: 70%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#keyboard-image {
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 10%;
+}
+
+.main-text {
+    max-width: 65%;
+    min-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 .schedule {
@@ -415,7 +461,15 @@ textarea {
     overflow: hidden;
 }
 
-.redwood {
+.sponsors img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.redwood {
+    max-height: 33%;
+}
+
+.partner {
+    max-height: 20%;   
 }
