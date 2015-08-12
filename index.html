@@ -24,6 +24,8 @@
           <!-- Welcome -->
           <div id="welcome" class="row">
             <div class="col-md-12 text-center">
+              <div id="cloud"><img onclick="hehehe()" src="img/cloud.png"></div>
+              <div id="lol"><img onclick="hehehe()" src="img/lol.gif"></div>
               <h4 id="date">Oct. 3-4, Dartmouth College</h4>
             </div>
           </div>
@@ -45,14 +47,15 @@
                   <h1>{ ABOUT }</h1>
                 </div>
               </div>
-                <div class="background-left">
+                <div id="background-left">
                   &nbsp;
                 </div>
-                <div class="background-right">
+                <div id="background-right">
                   <img src="img/keyboard.png" id="keyboard-image">
                 </div>
               <div class="main-text">
-                <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis, enim porta vulpu- tate pretium, risus libero blandit metus, eu ultrices diam urna eu ipsum. Vestibulum tortor leo, tristique et sollicitudin vel, pellentesque ut quam. Mauris maximus dignissim velit. Pellentesque dignissim magna sit amet dolor rhoncus, at sodales lorem dictum. Integer porttitor ultricies commodo. Curabitur semper porta nisl, consectetur euismod nunc facili- sis in. Fusce consectetur ullamcorper mi, et tincidunt lectus porta ut. Sed in diam ullamcor- per, dictum justo a, hendrerit sapien. Aenean ultrices tincidunt ligula. Proin dapibus urna non ligula sollicitudin, sit amet dignissim augue lacinia. Aliquam iaculis scelerisque quam, sed facilisis arcu viverra sed.</p>
+                <p class="main-text">Our first HackDartmouth event in spring 2015 was a blast. In fact, we had such a great time with all you hackers that we just had to throw another one. Thus, we present to you: HackDartmouth II!</p>
+                <p class="main-text">This time, we're getting bigger, badder, and rad-er. We're bringing hundreds of students from across the country together with our sponsors to hack awesome projects and ideas to life over 24 hours. There will be plenty of amazing people, great prizes, and memorable times to be had, so mark your calendars for the weekend of October 3-4, 2015. In the meanwhile, <a href="http://hackdartmouth2015.devpost.com/submissions">check out some of the projects</a> from our spring hackathon and dust off those ideas that have been sitting around all summer!</p>
               </div>
             </div>
           </div>
@@ -96,10 +99,10 @@
                   <div class="row">
                     <div class="col-md-4 faq-block">
                       <div class="question">
-                        <h4><span class="keyword">answer</span>* <span class="function">Q1</span>(<span class="params">"What a Hackathon?"</span>){</h4>
+                        <h4><span class="keyword">answer</span>* <span class="function">Q1</span>(<span class="params">"What is a Hackathon?"</span>){</h4>
                       </div>
                       <div class="answer">
-                        <p>A hackathon is an event in which groups of hackers divided into teams develop a product. Hundreds of programmers get together and form teams to create a cool web or mobile application. There will be lots of food and prizes, and opportunities to network with employers from tech companies.</p>
+                        <p>A hackathon is an event in which groups of hackers divided into teams develop a product. Hundreds of programmers get together and form teams to build something from scratch, be it a website, app, or some other product of their imagination. There will be lots of food and prizes, and opportunities to network with employers from tech companies.</p>
                       </div>
                       <h4 class="closing-brace">}</h4>
                     </div>
@@ -143,10 +146,10 @@
                     </div>
                      <div class="col-md-4 faq-block">
                       <div class="question">
-                        <h4><span class="keyword">answer</span>* <span class="function">Q6</span>(<span class="params">"How do I get to Dartmouth?"</span>){</h4>
+                        <h4><span class="keyword">answer</span>* <span class="function">Q6</span>(<span class="params">"How many people can I have on my team?"</span>){</h4>
                       </div>
                       <div class="answer">
-                        <p>We have limited funding but we will reimburse the travel costs for every student we accept. There are bus lines between Hanover and Boston/New York City that run on a daily basis, but we recommend booking tickets in advance to ensure that you will be able to arrive on time.</p>
+                        <p>We recommend working in teams of 3-4 people, though participants in the past have worked solo or in pairs as well. However, if your team would like to submit your project for prize consideration, we have a hard limit of 4 members per team.</p>
                       </div>
                       <h4 class="closing-brace">}</h4>
                     </div>
@@ -192,18 +195,19 @@
                     </div>
                      <div class="col-md-4 faq-block">
                       <div class="question">
-                        <p>&nbsp;</p>
+                        <h4><span class="keyword">answer</span>* <span class="function">Q11</span>(<span class="params">"How do I get to Dartmouth?"</span>){</h4>
                       </div>
                       <div class="answer">
-                        <p>&nbsp;</p>
+                        <p>We have limited funding but we will reimburse the travel costs for every student we accept. There are bus lines between Hanover and Boston/New York City that run on a daily basis, but we recommend booking tickets in advance to ensure that you will be able to arrive on time.</p>
                       </div>
+                      <h4 class="closing-brace">}</h4>
                     </div>
                      <div class="col-md-4 faq-block">
                       <div class="question">
-                        <h4><span class="keyword">answer</span>* <span class="function">Q11</span>(<span class="params">"My question isn't on here!"</span>){</h4>
+                        <h4><span class="keyword">answer</span>* <span class="function">Q12</span>(<span class="params">"My question isn't on here!"</span>){</h4>
                       </div>
                       <div class="answer">
-                        <p>Shoot us an email at <a href="mailto:questions@hackdartmouth.io">questions@hackdartmouth.io</a>, or submit your question on this <a href="https://docs.google.com/forms/d/1Icdl41m24wOheoeuDAalHw9JYpk9Ll2NUWabMAzBFCE/viewform?usp=send_form">form</a>.</p>
+                        <p>Shoot us an email at <a href="mailto:questions@hackdartmouth.io">questions@hackdartmouth.io</a> and we'll get back to you as soon as we can!</p>
                       </div>
                       <h4 class="closing-brace">}</h4>
                     </div>
@@ -226,7 +230,12 @@
               <br />
               <h4>Thank you to the companies and organizations that make HackDartmouth II possible!</h4>
               <div class="row">
-                <div class="redwood col-md-offset-4 col-md-4"><a href="http://www.microsoft.com/en-us/"><img src="img/microsoft.png"></a></div>
+                <div class="redwood col-md-offset-4 col-md-4"><a target="_blank" href="http://www.microsoft.com/en-us/"><img src="img/microsoft.png" alt="Microsoft"></a></div>
+              </div>
+              <h4>And a special shout-out to our awesome partners:</h4>
+              <br />
+              <div class="row">
+                <div class="partner col-md-offset-5 col-md-4"><a target="_blank" href="https://thayer.dartmouth.edu/"><img src="img/thayer.png" alt="Thayer"></a></div>
               </div>
               <br />
             </div>
@@ -259,7 +268,8 @@
               <a href="https://www.facebook.com/hackDartmouth" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
               <a href="https://twitter.com/hackdartmouth" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
               <a href="https://www.linkedin.com/company/6588725?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A6588725%2Cidx%3A1-1-1%2CtarId%3A1439363530321%2Ctas%3Ahackdartmouth" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
-              <a href="https://github.com/hackdartmouth" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+              <a href="https://github.com/hackdartmouth" target="_blank"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
             </div>
           </div>
 

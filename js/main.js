@@ -126,11 +126,36 @@ PineSchedule.load(".day-2", {
   ]
 });
 
+var playing = false;
+var nyanCat = new Audio("misc/nyancat.mp3");
+
+function hehehe(){  
+  if(!playing){
+    $("#lol").css("display","block");
+    nyanCat.play();
+    playing = true;
+    var nyanFly = setInterval(function(){
+  
+  var timer = $("#lol").stop().animate({"margin-left" : "+=60%"}, 5000);
+  
+  if ($("#lol").offset().left > $(window).width()) {
+    clearInterval(nyanFly);
+  }
+}, 5000);
+    
+  } else {
+    $("#lol").css("display","none");
+    nyanCat.pause();
+    playing = false;
+  }
+}
+
 $(document).ready(function(){
   var faqHeight = $('#faq').height();
   var faqWidth = $('#faq').width();
   var lineHeight = $('#linecount-start').height();
   var lineCount = faqHeight/lineHeight;
+  var scrolledDown = false;
   var navBar = $('.navigation')
   var active_nav_button = undefined
 
@@ -152,6 +177,7 @@ $(document).ready(function(){
     }
 
     scrollPosition = scrollPosition + $(window).height() / 10 + 80
+
     $(".active").removeClass('active')
     if (scrollPosition >= $("#apply").offset().top) {
       $(".apply.nav-button").addClass('active')
@@ -166,7 +192,24 @@ $(document).ready(function(){
     }
   }
 
-  $(window).scroll(function (event) { refreshNavBar() });
+  function slideIn() {
+    scrollPosition = $(window).scrollTop();
+    scrollPosition = scrollPosition + $(window).height() / 10 + 80;
+    if (scrollPosition >= $('#about').offset().top && !scrolledDown) {
+      $("#background-left").animate({
+        "margin-left" : "+=20%"
+      });
+      $("#background-right").animate({
+        "margin-left" : "-=30%"
+      });
+      scrolledDown = true;
+    }
+  }
+
+  $(window).scroll(function (event) {
+    refreshNavBar();
+    slideIn();
+  });
 });
 
 // dynamically update line numbers
