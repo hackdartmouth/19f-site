@@ -132,6 +132,9 @@ $(document).ready(function(){
   var lineHeight = $('#linecount-start').height();
   var lineCount = faqHeight/lineHeight;
   var navBar = $('.navigation')
+  var active_nav_button = undefined
+
+  refreshNavBar()
 
   for(i = 1; i < lineCount; i++){
     var newNode = document.createElement('li');
@@ -140,22 +143,30 @@ $(document).ready(function(){
     document.getElementById('sidebar').appendChild(newNode);
   }
 
-  $(window).scroll(function (event) {
-    if($(window).scrollTop() >= $('#welcome').height()) {
-      navBar.css({
-        position: 'fixed',
-        top: '0',
-        width: '100%',
-        'z-index': '1'
-      });
+  function refreshNavBar() {
+    scrollPosition = $(window).scrollTop()
+    if(scrollPosition >= $('#welcome').height()) {
+      navBar.addClass('fixed-nav-bar')
     } else {
-      navBar.css({
-        position: 'static',
-        top: 'auto',
-        width: 'auto'
-      });
+      navBar.removeClass('fixed-nav-bar')
     }
-  });
+
+    scrollPosition = scrollPosition + $(window).height() / 10 + 80
+    $(".active").removeClass('active')
+    if (scrollPosition >= $("#apply").offset().top) {
+      $(".apply.nav-button").addClass('active')
+    } else if (scrollPosition >= $("#sponsors").offset().top) {
+      $(".sponsors.nav-button").addClass('active')
+    } else if (scrollPosition >= $('#faq').offset().top) {
+      $(".faq.nav-button").addClass('active')
+    } else if (scrollPosition >= $('#schedule').offset().top) {
+      $(".schedule.nav-button").addClass('active')
+    } else if (scrollPosition >= $('#about').offset().top) {
+      $(".about.nav-button").addClass('active')
+    }
+  }
+
+  $(window).scroll(function (event) { refreshNavBar() });
 });
 
 // dynamically update line numbers

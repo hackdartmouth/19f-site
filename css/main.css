@@ -10,7 +10,8 @@
 
 .active {
     text-decoration: underline;
-    color: #003978;
+    color: #003978 !important;
+    font-weight: bold;
 }
 
 .section-header {
@@ -25,9 +26,15 @@
     background-color: #EBF5F4;
 }
 
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 .nav-button {
     color: #6590B4;
-    /*font-weight: bold;*/
     font-size: 5vh;
 }
 
@@ -91,7 +98,6 @@
 }
 
 #faq {
-    /* height: 75vh; */
     background-color: rgb(41, 42, 37);
     color: white;
     font-family: menlo;
@@ -184,7 +190,8 @@
     }
 }
 
-.sponsors {
+#sponsors {
+    min-height: 100vh;
     background-color: #72B9BC;
 }
 
@@ -192,7 +199,7 @@
     overflow: hidden;
 }
 
-.sponsors img {
+#sponsors img {
     max-width: 100%;
     max-height: 100%;
 }
