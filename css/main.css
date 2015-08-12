@@ -16,7 +16,14 @@
 
 .navigation {
     height: 10vh;
+    line-height: 10vh;
     background-color: #EBF5F4;
+}
+
+.nav-button {
+    color: #6590B4;
+    /*font-weight: bold;*/
+    font-size: 5vh;
 }
 
 .about {
@@ -25,7 +32,7 @@
     font-size: 1.2em;
 }
 
-.about .section-header {
+#about .section-header {
     color: #003978;
     overflow: hidden;
 }
@@ -67,25 +74,25 @@
     text-align: left;
 }
 
-.schedule {
+#schedule {
     min-height: 100vh;
     text-align: left;
     background-color: #F4F2F1;
     padding-bottom: 20px;
 }
 
-.schedule .section-header {
+#schedule .section-header {
     color: #328781;
 }
 
-.faq {
+#faq {
     /* height: 75vh; */
     background-color: rgb(41, 42, 37);
     color: white;
     font-family: menlo;
 }
 
-.apply {
+#apply {
     min-height: 500px;
     color: white;
     background-color: #99CACD;
@@ -102,11 +109,96 @@
     cursor: pointer;
 }
 
-.footer {
+#footer {
     height: 100px;
     line-height: 100px;
 }
 
+
+.sublime {
+    color: rgb(126, 127, 124);
+    padding-left: 0em;
+    font: monospace;
+}
+
+.sublime ul {
+    padding-left: 80%;
+    box-sizing: border-box;
+}
+
+.sublime li {
+    list-style-type: none;
+}
+
+.c-header {
+    float: left;
+    clear: both;
+}
+
+.preprocessor {
+    color: rgb(232, 68, 112);
+}
+
+.file {
+    color: rgb(232, 223, 110);
+}
+
+.faq-block {
+    text-align: left;
+}
+
+.answer {
+    color: #ffffff;
+    padding-top: 0.7em;
+}
+
+.keyword {
+    color: rgb(93, 205, 199);
+    font-style: italic;
+}
+
+.params {
+    color: rgb(232, 223, 110);
+}
+.function {
+    color: rgb(162, 201, 59);
+}
+
+.closing-brace {
+    padding-top: 0.5em;
+}
+
+#faq-title {
+    color: rgb(126, 127, 124);
+    clear: both;
+}
+
+@media (max-width: 780px ){
+    .sublime {
+        margin-right: 5%;
+    }
+}
+
+.sponsors {
+    background-color: #72B9BC;
+}
+
+.sponsor-block {
+    overflow: hidden;
+}
+
+.sponsors img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.redwood {
+    max-height: 33%;
+}
+
+.partner {
+    max-height: 20%;
+}
 /* ---------------------- DO NOT EDIT BELOW THIS LINE ---------------------- */
 
 /*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
@@ -387,89 +479,4 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
-}
-
-.sublime {
-    color: rgb(126, 127, 124);
-    padding-left: 0em;
-    font: monospace;
-}
-
-.sublime ul {
-    padding-left: 80%;
-    box-sizing: border-box;
-}
-
-.sublime li {
-    list-style-type: none;
-}
-
-.c-header {
-    float: left;
-    clear: both;
-}
-
-.preprocessor {
-    color: rgb(232, 68, 112);
-}
-
-.file {
-    color: rgb(232, 223, 110);
-}
-
-.faq-block {
-    text-align: left;
-}
-
-.answer {
-    color: #ffffff;
-    padding-top: 0.7em;
-}
-
-.keyword {
-    color: rgb(93, 205, 199);
-    font-style: italic;
-}
-
-.params {
-    color: rgb(232, 223, 110);
-}
-.function {
-    color: rgb(162, 201, 59);
-}
-
-.closing-brace {
-    padding-top: 0.5em;
-}
-
-#faq-title {
-    color: rgb(126, 127, 124);
-    clear: both;
-}
-
-@media (max-width: 780px ){
-    .sublime { 
-        margin-right: 5%;
-    }
-}
-
-.sponsors {
-    background-color: #72B9BC;
-}
-
-.sponsor-block {
-    overflow: hidden;
-}
-
-.sponsors img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.redwood {
-    max-height: 33%;
-}
-
-.partner {
-    max-height: 20%;   
 }

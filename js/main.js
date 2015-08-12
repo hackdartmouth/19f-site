@@ -127,8 +127,8 @@ PineSchedule.load(".day-2", {
 });
 
 $(document).ready(function(){
-  var faqHeight = $('.faq').height();
-  var faqWidth = $('.faq').width();
+  var faqHeight = $('#faq').height();
+  var faqWidth = $('#faq').width();
   var lineHeight = $('#linecount-start').height();
   var lineCount = faqHeight/lineHeight;
 
@@ -153,8 +153,8 @@ $(window).resize(function(){
   firstNode.innerHTML = '&nbsp;';
   document.getElementById('sidebar').appendChild(firstNode);
 
-  var faqHeight = $('.faq').height();
-  var faqWidth = $('.faq').width();
+  var faqHeight = $('#faq').height();
+  var faqWidth = $('#faq').width();
   var lineHeight = $('#linecount-start').height();
   var lineCount = faqHeight/lineHeight;
 
