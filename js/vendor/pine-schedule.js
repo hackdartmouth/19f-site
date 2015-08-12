@@ -109,7 +109,11 @@ window.PineSchedule.load = function(dom_id, data) {
     };
     this.get_pretty_time = function() {
       if (this.is_top_of_hour()) {
-        if (this.time <= 12) {
+        if (this.time == 0 || this.time == 24) {
+          return "12am"
+        } else if (this.time == 12) {
+          return "12pm";
+        } else if (this.time < 12) {
           return this.time + "am";
         } else {
           return (this.time - 12) + "pm";
