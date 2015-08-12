@@ -131,6 +131,7 @@ $(document).ready(function(){
   var faqWidth = $('#faq').width();
   var lineHeight = $('#linecount-start').height();
   var lineCount = faqHeight/lineHeight;
+  var navBar = $('.navigation')
 
   for(i = 1; i < lineCount; i++){
     var newNode = document.createElement('li');
@@ -138,6 +139,23 @@ $(document).ready(function(){
     newNode.appendChild(innerContent);
     document.getElementById('sidebar').appendChild(newNode);
   }
+
+  $(window).scroll(function (event) {
+    if($(window).scrollTop() >= $('#welcome').height()) {
+      navBar.css({
+        position: 'fixed',
+        top: '0',
+        width: '100%',
+        'z-index': '1'
+      });
+    } else {
+      navBar.css({
+        position: 'static',
+        top: 'auto',
+        width: 'auto'
+      });
+    }
+  });
 });
 
 // dynamically update line numbers
