@@ -129,7 +129,7 @@ PineSchedule.load(".day-2", {
 var playing = false;
 var nyanCat = new Audio("misc/nyancat.mp3");
 
-function hehehe(){  
+function hehehe(){
   if(!playing){
     $("#lol").css("display","block");
     nyanCat.play();
@@ -147,7 +147,8 @@ function hehehe(){
   }
 }
 
-function jumpToSection(targetSection){
+function jumpToSection(event, targetSection){
+  event.preventDefault();
   var navbarHeight = $("#myNav").height();
   var controlString = null;
   switch(targetSection){
