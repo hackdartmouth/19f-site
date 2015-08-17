@@ -127,7 +127,7 @@ body {
 }
 
 #apply {
-    min-height: 600px;
+    height: 90vh;
     color: white;
     background-color: #99CACD;
 }
