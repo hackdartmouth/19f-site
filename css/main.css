@@ -117,11 +117,11 @@ body {
     height: 10vh;
     line-height: 10vh;
     background-color: #EBF5F4;
+    z-index: 1;
 }
 
 .navbar-collapse {
     background-color: #EBF5F4;
-    z-index: 999;
 }
 
 .fixed-nav-bar {
