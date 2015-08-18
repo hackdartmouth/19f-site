@@ -171,9 +171,6 @@ function jumpToSection(event, targetSection){
       controlString = "#";
   }
   var sectionOffset = $(controlString).offset().top;
-  if (targetSection == "s1"){
-    //sectionOffset -= navbarHeight;
-  }
   $("html, body").animate({
     scrollTop : sectionOffset - navbarHeight + 1
   }, 1000);

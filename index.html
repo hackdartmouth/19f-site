@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="https://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -36,13 +35,28 @@
 
           <!-- Navigation -->
           <div id="placeholderNav" class="navigation row text-center"></div>
-          <div id="myNav" class="navigation row text-center">
-            <div class="col-md-3"><a id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#">ABOUT</a></div>
-            <div class="col-md-2"><a id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div>
-            <div class="col-md-2"><a id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div>
-            <div class="col-md-2"><a id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div>
-            <div class="col-md-3"><a id="s5" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">APPLY</a></div>
-          </div>
+          <nav id="myNav" class="navbar navbar-default navigation row text-center">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav nav-justified">
+                  <li><div class="col-md-3"><a id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#">ABOUT</a></div></li>
+                  <li><div class="col-md-2"><a id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>
+                  <li><div class="col-md-2"><a id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div></li>
+                  <li><div class="col-md-2"><a id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div></li>
+                  <li><div class="col-md-3"><a id="s5" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">APPLY</a></div></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
           <!-- About -->
           <div id="about" class="row">
             <div class="col-md-12 text-center">
@@ -278,9 +292,11 @@
 
         </div>
 
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="js/vendor/pine-schedule.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
