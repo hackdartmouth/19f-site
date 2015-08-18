@@ -9,7 +9,7 @@ body {
 }
 
 #welcome-title-a {
-    font-size: 7vw;
+    font-size: 7vh;
     font-weight: bold;
     color: #7cc0b6;
     margin-top: 5vh;
@@ -19,7 +19,7 @@ body {
 }
 
 #welcome-title-b {
-    font-size: 8vw;
+    font-size: 8vh;
     font-weight: bold;
     color: #1d8b8e;
     margin-top: 0%;
@@ -111,7 +111,7 @@ body {
 }
 
 #background-left {
-    
+
     height: 55vh;
     width: 55vh;
     float: left;
