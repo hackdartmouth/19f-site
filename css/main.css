@@ -108,6 +108,15 @@ body {
     display: none;
 }
 
+#myButton {
+    border-radius: 0;
+    border: 2px solid #6590b4;
+}
+
+#myButton > span {
+    border: 1px solid #6590b4;
+}
+
 .active {
     text-decoration: underline;
     color: #003978 !important;

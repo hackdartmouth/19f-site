@@ -5,66 +5,35 @@ PINE_SCHEDULE = {
     "header_alignment": "center"
   },
   RANGE: {
-    "start": 9.0,
-    "end": 23.0
+    "start": 0.0,
+    "end": 24.0
+  },
+  D1RANGE: {
+    "start" : 12.0,
+    "end" : 24.0
+  },
+  D2RANGE: {
+    "start" : 0.0,
+    "end" : 12.0
   }
 };
+
 
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
   "day_of_week": "SAT",
   "month": "OCT",
   "day": 3,
-  "range": PINE_SCHEDULE.RANGE,
+  "range": PINE_SCHEDULE.D1RANGE,
   "events": [
     {
-      "time_range": "10-11am",
-      "name": "REGISTRATION",
-      "location": "Cook Auditorium",
+      "time_range": "12pm-12am",
+      "name": "HACKING!!!",
+      "location": "Thayer School of Engineering",
       "color": "#8BB9B6",
-      "start": 10.0,
-      "end": 11.0
+      "start": 12.0,
+      "end": 24.0
     },
-    {
-      "time_range": "11am-12:30pm",
-      "name": "OPENING SESSION",
-      "location": "Cook Auditorium",
-      "color": "#E6D275",
-      "start": 11.0,
-      "end": 12.5
-    },
-    {
-      "time_range": "1-2pm",
-      "name": "LUNCH",
-      "location": "Thayer Atrium",
-      "color": "#BFDC85",
-      "start": 13.0,
-      "end": 14.0
-    },
-    {
-      "time_range": "2:30-3:30pm",
-      "name": "WORKSHOP",
-      "location": "Couch Lab",
-      "color": "#EBEF8F",
-      "start": 14.5,
-      "end": 15.5
-    },
-    {
-      "time_range": "7-8pm",
-      "name": "DINNER",
-      "location": "Thayer Atrium",
-      "color": "#BFDC85",
-      "start": 19.0,
-      "end": 20.0
-    },
-    {
-      "time_range": "9-9:30pm",
-      "name": "SHEBA SHOW",
-      "location": "Great Hall",
-      "color": "#DF8B80",
-      "start": 21.0,
-      "end": 21.5
-    }
   ]
 });
 
@@ -73,56 +42,16 @@ PineSchedule.load(".day-2", {
   "day_of_week": "SUN",
   "month": "OCT",
   "day": 4,
-  "range": PINE_SCHEDULE.RANGE,
+  "range": PINE_SCHEDULE.D2RANGE,
   "events": [
     {
-      "time_range": "10-11am",
-      "name": "REGISTRATION",
-      "location": "Cook Auditorium",
-      "color": "#8BB9B6",
-      "start": 10.0,
-      "end": 11.0
-    },
-    {
-      "time_range": "11am-12:30pm",
-      "name": "OPENING SESSION",
-      "location": "Cook Auditorium",
-      "color": "#E6D275",
-      "start": 11.0,
-      "end": 12.5
-    },
-    {
-      "time_range": "1-2pm",
-      "name": "LUNCH",
-      "location": "Thayer Atrium",
+      "time_range" : "12am-12pm",
+      "name": "MOAR HACKING!!!",
+      "location": "Thayer School of Engineering",
       "color": "#BFDC85",
-      "start": 13.0,
-      "end": 14.0
+      "start": 0.0,
+      "end": 12.0
     },
-    {
-      "time_range": "2:30-3:30pm",
-      "name": "WORKSHOP",
-      "location": "Couch Lab",
-      "color": "#EBEF8F",
-      "start": 14.5,
-      "end": 15.5
-    },
-    {
-      "time_range": "7-8pm",
-      "name": "DINNER",
-      "location": "Thayer Atrium",
-      "color": "#BFDC85",
-      "start": 19.0,
-      "end": 20.0
-    },
-    {
-      "time_range": "9-9:30pm",
-      "name": "SHEBA SHOW",
-      "location": "Great Hall",
-      "color": "#DF8B80",
-      "start": 21.0,
-      "end": 21.5
-    }
   ]
 });
 
