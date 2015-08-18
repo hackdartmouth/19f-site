@@ -23,10 +23,14 @@
 
           <!-- Welcome -->
           <div id="welcome" class="row">
-            <div class="col-md-12 text-center">
-              <div id="cloud"><img onclick="hehehe()" src="img/cloud.png"></div>
+            <div id="cloud"><img id="cloud-img" onclick="hehehe()" src="img/cloud.png"></div>
               <div id="lol"><img onclick="hehehe()" src="img/lol.gif"></div>
-              <h4 id="date">Oct. 3-4, Dartmouth College</h4>
+            <div class="col-md-12 text-center">
+              <div id="welcome-block">
+                <h2 id="welcome-title-a">WELCOME TO</h2>
+                <h1 id="welcome-title-b">HACKDARTMOUTH</h1>
+                <h4 id="date">Oct. 3-4, Dartmouth College</h4>
+              </div>
             </div>
           </div>
 
@@ -47,15 +51,17 @@
                   <h1>{ ABOUT }</h1>
                 </div>
               </div>
+              <div class="about-body">
                 <div id="background-left" class="hidden-xs">
-                  &nbsp;
+                  <img src="img/tabletop.png" class="about-image">
                 </div>
                 <div id="background-right" class="hidden-xs">
-                  <img src="img/keyboard.png" id="keyboard-image">
+                  <img src="img/keyboard.png" class="about-image" style="margin-left: 10%">
                 </div>
-              <div class="main-text">
-                <p class="main-text">Our first HackDartmouth event in spring 2015 was a blast. In fact, we had such a great time with all you hackers that we just had to throw another one. Thus, we present to you: HackDartmouth II!</p>
-                <p class="main-text">This time, we're getting bigger, badder, and rad-er. We're bringing hundreds of students from across the country together with our sponsors to hack awesome projects and ideas to life over 24 hours. There will be plenty of amazing people, great prizes, and memorable times to be had, so mark your calendars for the weekend of October 3-4, 2015. In the meanwhile, <a href="http://hackdartmouth2015.devpost.com/submissions">check out some of the projects</a> from our spring hackathon and dust off those ideas that have been sitting around all summer!</p>
+                <div class="main-text">
+                  <p class="main-text">Our first HackDartmouth event in spring 2015 was a blast. In fact, we had such a great time with all you hackers that we just had to throw another one. Thus, we present to you: HackDartmouth II!</p>
+                  <p class="main-text">This time, we're getting bigger, badder, and rad-er. We're bringing hundreds of students from across the country together with our sponsors to hack awesome projects and ideas to life over 24 hours. There will be plenty of amazing people, great prizes, and memorable times to be had, so mark your calendars for the weekend of October 3-4, 2015. In the meanwhile, <a href="http://hackdartmouth2015.devpost.com/submissions">check out some of the projects</a> from our spring hackathon and dust off those ideas that have been sitting around all summer!</p>
+                </div>
               </div>
             </div>
           </div>
@@ -102,7 +108,7 @@
                         <h4><span class="keyword">answer</span>* <span class="function">Q1</span>(<span class="params">"What is a Hackathon?"</span>){</h4>
                       </div>
                       <div class="answer">
-                        <p>A hackathon is an event in which groups of hackers divided into teams develop a product. Hundreds of programmers get together and form teams to build something from scratch, be it a website, app, or some other product of their imagination. There will be lots of food and prizes, and opportunities to network with employers from tech companies.</p>
+                        <p>A hackathon is an event in which groups of hackers divided into teams develop a product. Hundreds of programmers get together to build something from scratch, be it a website, app, or some other product of their imagination. There will be lots of food and prizes, and opportunities to work with representatives from various companies.</p>
                       </div>
                       <h4 class="closing-brace">}</h4>
                     </div>
@@ -111,7 +117,7 @@
                         <h4><span class="keyword">answer</span>* <span class="function">Q2</span>(<span class="params">"Who can attend?"</span>){</h4>
                       </div>
                       <div class="answer">
-                        <p>Any university student (graduate or undergraduate) is welcome to attend! We also admit high school students on a case by case basis.</p>
+                        <p>Any university student (graduate or undergraduate) is welcome to participate! We also admit high school students on a case by case basis. Anyone and everyone is welcome to come and see what participants are working on, though, so feel free to swing by.</p>
                       </div>
                       <h4 class="closing-brace">}</h4>
                     </div>
@@ -131,7 +137,7 @@
                         <h4><span class="keyword">answer</span>* <span class="function">Q4</span>(<span class="params">"Do I need to come with an idea or team?"</span>){</h4>
                       </div>
                       <div class="answer">
-                        <p>No. Although you can sign up with teammates, you can also sign up as an individual, and we will help place you on a team. From there, your mentors can help you brainstorm if you are having trouble coming up with an idea.</p>
+                        <p>Nope! Although you can sign up with teammates, you can also sign up as an individual, and we will help place you on a team. From there, your mentors can help you brainstorm if you are having trouble coming up with an idea.</p>
                       </div>
                       <h4 class="closing-brace">}</h4>
                     </div>
@@ -230,12 +236,12 @@
               <br />
               <h4>Thank you to the companies and organizations that make HackDartmouth II possible!</h4>
               <div class="row">
-                <div class="redwood col-md-offset-4 col-md-4"><a target="_blank" href="http://www.microsoft.com/en-us/"><img src="img/microsoft.png" alt="Microsoft"></a></div>
+                <div class="col-md-offset-4 col-md-4"><a target="_blank" href="http://www.microsoft.com/en-us/"><img class="redwood-img" src="img/microsoft.png" alt="Microsoft"></a></div>
               </div>
               <h4>And a special shout-out to our awesome partners:</h4>
               <br />
               <div class="row">
-                <div class="partner col-md-offset-5 col-md-4"><a target="_blank" href="https://thayer.dartmouth.edu/"><img src="img/thayer.png" alt="Thayer"></a></div>
+                <div class="col-md-offset-4 col-md-4"><a target="_blank" href="https://thayer.dartmouth.edu/"><img class="partner-img" src="img/thayer.png" alt="Thayer"></a></div>
               </div>
               <br />
             </div>

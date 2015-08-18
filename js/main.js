@@ -229,10 +229,10 @@ $(document).ready(function(){
     scrollPosition = scrollPosition + $(window).height() / 10 + 80;
     if (scrollPosition >= $('#about').offset().top && !scrolledDown) {
       $("#background-left").animate({
-        "margin-left" : "+=20%"
+        "margin-left" : "+=20vw"
       });
       $("#background-right").animate({
-        "margin-left" : "-=30%"
+        "margin-left" : "-=20vw"
       });
       scrolledDown = true;
     }
