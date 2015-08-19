@@ -1,3 +1,4 @@
+/*
 PINE_SCHEDULE = {
   OPTIONALS: {
     "borders": true,
@@ -17,7 +18,6 @@ PINE_SCHEDULE = {
     "end" : 12.0
   }
 };
-
 
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
@@ -54,6 +54,7 @@ PineSchedule.load(".day-2", {
     },
   ]
 });
+*/
 
 var playing = false;
 var nyanCat = new Audio("misc/nyancat.mp3");
@@ -84,9 +85,11 @@ function jumpToSection(event, targetSection){
     case "s1":
       controlString = "#about";
       break;
+    /*
     case "s2":
       controlString = "#schedule";
       break;
+    */
     case "s3":
       controlString = "#faq";
       break;
@@ -143,9 +146,9 @@ $(document).ready(function(){
       $(".sponsors.nav-button").addClass('active')
     } else if (scrollPosition >= $('#faq').offset().top) {
       $(".faq.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#schedule').offset().top) {
+    } /*else if (scrollPosition >= $('#schedule').offset().top) {
       $(".schedule.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#about').offset().top) {
+    } */else if (scrollPosition >= $('#about').offset().top) {
       $(".about.nav-button").addClass('active')
     }
   }

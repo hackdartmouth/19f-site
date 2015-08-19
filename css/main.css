@@ -135,6 +135,7 @@ body {
 .nav-button {
     color: #6590B4;
     font-size: 5vh;
+    text-align: center;
 }
 
 #about {
@@ -214,7 +215,7 @@ body {
 }
 
 #apply {
-    height: 90vh;
+    height: 80vh;
     color: white;
     background-color: #99CACD;
 }
@@ -231,8 +232,8 @@ body {
 }
 
 #footer {
-    height: 100px;
-    line-height: 100px;
+    height: 10vh;
+    line-height: 10vh;
 }
 
 
