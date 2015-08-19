@@ -198,7 +198,7 @@ body {
 }
 
 #schedule {
-    min-height: 100vh;
+    min-height: 90vh;
     text-align: left;
     background-color: #F4F2F1;
     padding-bottom: 20px;
@@ -302,7 +302,7 @@ body {
 }
 
 #sponsors {
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: #72B9BC;
     font-family: menlo;
     color: #ffffff;
