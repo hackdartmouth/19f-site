@@ -118,6 +118,7 @@ $(document).ready(function(){
   var navBar = $('#myNav')
   var active_nav_button = undefined
 
+  setCollapsibility()
   refreshNavBar()
 
   for(i = 1; i < lineCount; i++){
@@ -171,30 +172,41 @@ $(document).ready(function(){
     refreshNavBar();
     slideIn();
   });
-});
 
-// dynamically update line numbers
-$(window).resize(function(){
-  // clear out line counts on resize
-  var topNode = document.getElementById('sidebar');
-  while(topNode.firstChild){
-    topNode.removeChild(topNode.firstChild);
+  function setCollapsibility() {
+    if ($(window).width() > 850) {
+      $("#can-collapse").removeClass('navbar-collapsible-menu');
+    } else {
+      $("#can-collapse").addClass('navbar-collapsible-menu');
+    }
   }
 
-  var firstNode = document.createElement('li');
-  firstNode.id = 'linecount-start';
-  firstNode.innerHTML = '&nbsp;';
-  document.getElementById('sidebar').appendChild(firstNode);
+  // dynamically update line numbers
+  $(window).resize(function(){
 
-  var faqHeight = $('#faq').height();
-  var faqWidth = $('#faq').width();
-  var lineHeight = $('#linecount-start').height();
-  var lineCount = faqHeight/lineHeight;
+    setCollapsibility()
 
-  for(i = 1; i < lineCount; i++){
-    var newNode = document.createElement('li');
-    var innerContent = document.createTextNode(i);
-    newNode.appendChild(innerContent);
-    document.getElementById('sidebar').appendChild(newNode);
-  }
+    // clear out line counts on resize
+    var topNode = document.getElementById('sidebar');
+    while(topNode.firstChild){
+      topNode.removeChild(topNode.firstChild);
+    }
+
+    var firstNode = document.createElement('li');
+    firstNode.id = 'linecount-start';
+    firstNode.innerHTML = '&nbsp;';
+    document.getElementById('sidebar').appendChild(firstNode);
+
+    var faqHeight = $('#faq').height();
+    var faqWidth = $('#faq').width();
+    var lineHeight = $('#linecount-start').height();
+    var lineCount = faqHeight/lineHeight;
+
+    for(i = 1; i < lineCount; i++){
+      var newNode = document.createElement('li');
+      var innerContent = document.createTextNode(i);
+      newNode.appendChild(innerContent);
+      document.getElementById('sidebar').appendChild(newNode);
+    }
+  });
 });

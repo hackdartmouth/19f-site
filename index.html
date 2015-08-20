@@ -47,20 +47,20 @@
           <nav id="myNav" class="navbar navbar-default navigation row text-center">
             <div class="container-fluid">
               <div class="navbar-header">
-                <button id="myButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button id="myButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapsible-menu" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
               </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div id="can-collapse" class="collapse navbar-collapse navbar-collapsible-menu">
                 <ul class="nav nav-justified">
-                  <li><div><a id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#">ABOUT</a></div></li>
-                  <!--<li><div><a id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>-->
-                  <li><div><a id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div></li>
-                  <li><div><a id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div></li>
-                  <li><div><a id="s5" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">APPLY</a></div></li>
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#">ABOUT</a></div></li>
+                  <!--<li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>-->
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div></li>
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div></li>
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s5" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">APPLY</a></div></li>
                 </ul>
               </div>
             </div>
@@ -208,7 +208,7 @@
                     </div>
                      <div class="col-md-4 faq-block">
                       <div class="question">
-                        <span class="keyword">func</span> <span class="function">non_student_opportunities</span>(<span class="params"></span>) {
+                        <span class="keyword">func</span> <span class="function">not_a_hacker</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
                         <p>You can help by mentoring students or sponsoring the event. Contact <a href="mailto:mentors@hackdartmouth.io">mentors@hackdartmouth.io</a> to find out how. You can also spread the word about this event to students, friends, and media.</p>
@@ -222,7 +222,7 @@
                         <span class="keyword">func</span> <span class="function">deadline_to_register</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>For applicants coming from outside the New England/Atlantic Seaboard regions, the deadline is 11:59 PM on Friday, September 11. If you are a non-Dartmouth student from the New England/Atlantic Seaboard regions, the deadline is 11:59 PM on Friday, September 18. Dartmouth students may continue to register after these dates.</p>
+                        <p>For applicants coming from outside the New England/Atlantic Seaboard regions, the deadline is 11:59 PM on Monday, September 7. If you are a non-Dartmouth student from the New England/Atlantic Seaboard regions, the deadline is 11:59 PM on Monday, September 14. Dartmouth students may continue to register after these dates.</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
