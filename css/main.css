@@ -321,6 +321,14 @@ body {
     max-height: 100%;
 }
 
+.spring-sponsor {
+
+}
+
+.spring-sponsor img {
+    width: 100%;
+    opacity: 0.6;
+}
 .redwood {
 
 }
