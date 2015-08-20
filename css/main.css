@@ -252,6 +252,10 @@ body {
     list-style-type: none;
 }
 
+.import {
+    padding-left: 10px;
+}
+
 .c-header {
     float: left;
     clear: both;
@@ -297,7 +301,7 @@ body {
 
 @media (max-width: 780px ){
     .sublime {
-        margin-right: 5%;
+        margin-right: 4%;
     }
 }
 
@@ -318,22 +322,19 @@ body {
 }
 
 .redwood {
-    max-height: 33%;
+
 }
 
 .redwood-img {
-    max-height: 100%;
-    max-width: 100%;
+    width: ;
 }
 
 .partner {
-    max-height: 33%;
-
+    padding: 5% 0% 5% 0%;
 }
 
 .partner-img {
-    max-height: 100%;
-    max-width: 100%;
+    width: 65%;
 }
 
 /* ---------------------- DO NOT EDIT BELOW THIS LINE ---------------------- */

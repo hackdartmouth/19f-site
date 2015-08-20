@@ -13,6 +13,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="https://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/main.css">
+
+        <!-- for Facebook -->
+        <meta property="og:title" content="HackDartmouth II"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="http://hackdartmouth.io/img/header-fb.png"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:image:type" content="image/png"/>
+        <meta property="og:url" content="http://hackdartmouth.io"/>
+        <meta property="og:description" content="Register now for HackDartmouth II on Oct 3-4."/>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -112,9 +122,11 @@
               <div class="row">
                   <br />
                   <div>
-                  <span class="c-header row"><span class="preprocessor">import</span> <span class="file">swag</span></span>
-                  <span class="c-header row"><span class="preprocessor">import</span> <span class="file">hacking</span></span>
-                  <span class="c-header row"><span class="preprocessor">import</span> <span class="file">questions</span></span>
+                  <div class="import">
+                    <span class="c-header row"><span class="preprocessor">import</span> <span class="file">swag</span></span>
+                    <span class="c-header row"><span class="preprocessor">import</span> <span class="file">hacking</span></span>
+                    <span class="c-header row"><span class="preprocessor">import</span> <span class="file">questions</span></span>
+                  </div>
                   <h1 class="section-header" id="faq-title">/* <span style="color: #917ce1">FAQ</span> */</h1>
                   <br />
                   <div class="row">
@@ -256,7 +268,12 @@
               <h4>
                 And a special shout-out to our awesome partners:
               </h4>
-              <ul>
+              <div class="row">
+                <div class="col-md-4 partner"><a href="https://thayer.dartmouth.edu/"><img style="padding-top: 5%" class="partner-img" src="img/thayer.png" alt="Thayer School of Engineering"></a></div>
+                <div class="col-md-4 partner"><a href="https://mlh.io/"><img class="partner-img" src="img/mlh.png" alt="Major League Hacking"></a></div>
+                <div class="col-md-4 partner"><a href="http://dali.dartmouth.edu/"><img class="partner-img" src="img/dali.png" alt="DALI Lab at Dartmouth College"></a></div>
+              </div>
+              <!--<ul>
                 <li><a href="https://thayer.dartmouth.edu/">
                   The Thayer School of Engineering
                 </a></li>
@@ -265,7 +282,7 @@
                 <li><a href="http://dali.dartmouth.edu/">
                   DALI Lab at Dartmouth College
                 </a></li>
-              </ul>
+              </ul>-->
               <br />
               <br />
             </div>
