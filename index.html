@@ -3,82 +3,336 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>HackDartmouth</title>
+        <title>HackDartmouth II</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="https://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- for Facebook -->
+        <meta property="og:title" content="HackDartmouth II"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="http://hackdartmouth.io/img/header-fb.png"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:image:type" content="image/png"/>
+        <meta property="og:url" content="http://hackdartmouth.io"/>
+        <meta property="og:description" content="Register now for HackDartmouth II on Oct 3-4."/>
     </head>
-    <body class="full-height">
+    <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <div class="container-fluid">
-          <div class="row">
+
+          <!-- Welcome -->
+          <div id="welcome" class="row">
+            <div id="cloud"><img id="cloud-img" onclick="hehehe()" src="img/cloud.png"></div>
+              <div id="lol"><img id="lol-img" onclick="hehehe()" src="img/lol.gif"></div>
+            <div class="col-md-12 text-center">
+              <div id="welcome-block">
+                <h1 id="welcome-title">HACKDARTMOUTH II</h1>
+                <h4 id="date">Oct. 3-4, Dartmouth College</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <nav id="placeholderNav" class="navbar navbar-default navigation row text-center"></nav>
+          <nav id="myNav" class="navbar navbar-default navigation row text-center">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button id="myButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapsible-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div id="can-collapse" class="collapse navbar-collapse navbar-collapsible-menu">
+                <ul class="nav nav-justified">
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#">ABOUT</a></div></li>
+                  <!--<li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>-->
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div></li>
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div></li>
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s5" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">APPLY</a></div></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- About -->
+          <div id="about" class="row">
+            <div class="col-md-12 text-center">
+              <div class="section-header row">
+                <div class="col-md-12">
+                  <h1>{ ABOUT }</h1>
+                </div>
+              </div>
+              <div class="about-body">
+                <div id="background-left" class="hidden-xs">
+                  <img src="img/tabletop.png" class="about-image">
+                </div>
+                <div id="background-right" class="hidden-xs">
+                  <img src="img/keyboard.png" class="about-image" style="margin-left: 10%">
+                </div>
+                <div class="main-text">
+                  <p class="main-text">Our first HackDartmouth event in spring 2015 was a blast. In fact, we had such a great time with all you hackers that we just had to throw another one. Thus, we present to you: HackDartmouth II!</p>
+                  <p class="main-text">This time, we're getting bigger, badder, and rad-er. We're bringing hundreds of students from across the country together with our sponsors to hack awesome projects and ideas to life over 24 hours. There will be plenty of amazing people, great prizes, and memorable times to be had, so mark your calendars for the weekend of October 3-4, 2015. In the meanwhile, <a href="http://hackdartmouth2015.devpost.com/submissions">check out some of the projects</a> from our spring hackathon and dust off those ideas that have been sitting around all summer!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <!-- Schedule -->
+          <!--
+          <div id="schedule" class="row">
             <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-offset-3 col-md-6">
-                  <img class="img-responsive" src="img/dartmouth.png">
+              <div class="section-header row text-center">
+                <div class="col-md-12">
+                  <h1>{ SCHEDULE }</h1>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-12 text-center">
-                  <h1>hackdartmouth II</h1>
-                  <h4>Oct. 3-4, Dartmouth College</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-offset-4 col-md-4 text-center">
-
-                  <!-- Begin MailChimp Signup Form -->
-                  <div id="mc_embed_signup">
-                  <form action="//hackdartmouth.us10.list-manage.com/subscribe/post?u=d5a28e7c7c3e418f70b5c5cef&amp;id=d4140dd2ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                      <div id="mc_embed_signup_scroll" class="text-center">
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div style="position: absolute; left: -5000px;"><input type="text" name="b_d5a28e7c7c3e418f70b5c5cef_d4140dd2ae" tabindex="-1" value=""></div>
-                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                      </div>
-                  </form>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="row">
+                    <div class="day-1 schedule col-md-6"></div>
+                    <div class="day-2 schedule col-md-6"></div>
                   </div>
-                  <!--End mc_embed_signup-->
-
                 </div>
               </div>
+            </div>
+          </div>
+          -->
 
+          <!-- FAQ -->
+          <div id="faq" class="row">
+            <br />
+            <div class="col-xs-1 sublime">
+              <ul id="sidebar">
+                <li id="linecount-start">&nbsp;</li>
+              </ul>
+            </div>
+            <div class="col-xs-10 text-center faq-body container">
               <div class="row">
-                <div class="col-md-12 text-center">
-                  <a href="http://hackdartmouth2015.challengepost.com/" target="_blank">spring challengepost</a>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <a href="https://www.facebook.com/hackDartmouth" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-                  <a href="https://twitter.com/hackdartmouth" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                  <br />
+                  <div>
+                  <div class="import">
+                    <span class="c-header row"><span class="preprocessor">import</span> <span class="file">swag</span></span>
+                    <span class="c-header row"><span class="preprocessor">import</span> <span class="file">hacking</span></span>
+                    <span class="c-header row"><span class="preprocessor">import</span> <span class="file">questions</span></span>
+                  </div>
+                  <h1 class="section-header" id="faq-title">/* <span style="color: #917ce1">FAQ</span> */</h1>
+                  <br />
+                  <div class="row">
+                    <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">what_is_a_hackathon</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>A hackathon is an event in which groups of hackers divided into teams develop a product. Hundreds of programmers get together to build something from scratch, be it a website, app, or some other product of their imagination. There will be lots of food and prizes, and opportunities to work with representatives from various companies.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">who_can_attend</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>Any university student (graduate or undergraduate) is welcome to participate! We also admit high school students on a case by case basis. Anyone and everyone is welcome to come and see what participants are working on, though, so feel free to swing by.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">ok_if_no_experience</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>That's completely fine! We have mentors who will help you hit the ground running with guidance. You'll also have plenty of opportunity to pick the brains of talented students around you. Furthermore, 24 hours is plenty of time to learn something new!</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">require_idea_or_team</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>Nope! Although you can sign up with teammates, you can also sign up as an individual, and we will help place you on a team. From there, your mentors can help you brainstorm if you are having trouble coming up with an idea.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">what_to_build</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>You can build whatever you want: websites, programs, mobile apps, anything! However, all code must be written during the hackathon - feel free to use open source libraries and APIs.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">num_people_per_team</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>We recommend working in teams of 3-4 people, though participants in the past have worked solo or in pairs as well. However, if your team would like to submit your project for prize consideration, we have a hard limit of 4 members per team.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">what_to_bring?</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>Laptop, cellphone, chargers, sleeping bag, pillow, toiletries, a few change of clothes. Please don't bring alcohol, drugs, or soldering equipment. </p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">what_can_I_win</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>A panel of judges will decide on the winning hacks based on criteria of creativity, usefulness, technical difficulty, and form. The top prizes are TBA, but will be worth thousands of dollars and perks from company sponsors. Most sponsors will offer their own prizes for specific categories as well.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">not_a_hacker</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>You can help by mentoring students or sponsoring the event. Contact <a href="mailto:mentors@hackdartmouth.io">mentors@hackdartmouth.io</a> to find out how. You can also spread the word about this event to students, friends, and media.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">deadline_to_register</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>For applicants coming from outside the New England/Atlantic Seaboard regions, the deadline is 11:59 PM on Monday, September 7. If you are a non-Dartmouth student from the New England/Atlantic Seaboard regions, the deadline is 11:59 PM on Monday, September 14. Dartmouth students may continue to register after these dates.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">get_to_dartmouth</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>We have limited funding but we will reimburse the travel costs for every student we accept. There are bus lines between Hanover and Boston/New York City that run on a daily basis, but we recommend booking tickets in advance to ensure that you will be able to arrive on time.</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                     <div class="col-md-4 faq-block">
+                      <div class="question">
+                        <span class="keyword">func</span> <span class="function">other_questions</span>(<span class="params"></span>) {
+                      </div>
+                      <div class="answer">
+                        <p>Shoot us an email at <a href="mailto:questions@hackdartmouth.io">questions@hackdartmouth.io</a> and we'll get back to you as soon as we can!</p>
+                      </div>
+                      <span class="closing-brace">}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
             </div>
           </div>
+
+          <!-- Sponsors -->
+          <div id="sponsors" class="row">
+            <div class="col-md-12 text-center">
+              <div class="section-header row">
+                <div class="col-md-12">
+                  <h1>{ SPONSORS }</h1>
+                </div>
+              </div>
+              <h4>If you are interested in sponsoring HackDartmouth, please e-mail us at <a href="mailto:sponsors@hackdartmouth.io">sponsors@hackdartmouth.io</a>.</h4>
+              <br />
+              <h4>Our past sponsors include:</h4>
+              <div class="row">
+                <div class="col-md-offset-2 col-md-2 spring-sponsor"><a href="http://www.microsoft.com/en-us/"><img src="img/microsoft.png" alt="Microsoft"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="https://www.ionic.com/"><img src="img/ionic.png" alt="Ionic Security"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="https://www.palantir.com/"><img style="padding-top: 5%" src="img/palantir.png" alt="Palantir"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="https://getpebble.com/"><img style="margin-top: -10%" src="img/pebble.svg" alt="Pebble"></a></div>
+              </div>
+              <div class="row">
+                <div class="col-md-offset-2 col-md-2 spring-sponsor"><a href="http://www.epic.com/"><img style="padding: 0 5% 0 5%" src="img/epic.png" alt="Epic"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="http://www.autodesk.com/"><img style="padding-top: 10%" src="img/autodesk.png" alt="Autodesk"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="https://www.behance.net/"><img style="padding-top: 15%" src="img/behance.png" alt="Behance"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="http://www.flowtraq.com/corporate/"><img src="img/flowtraq.png" alt="FlowTraq"></a></div>
+              </div>
+              <div class="row">
+                <div class="col-md-offset-2 col-md-2 spring-sponsor"><a href="https://www.google.com/?gws_rd=ssl"><img style="margin-top: -10%" src="img/google.png" alt="Google"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="http://baloonr.com/"><img style="padding: 0% 10% 0% 10%" src="img/baloonr-dreamit.png" alt="Baloonr/DreamIt Ventures"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="http://www.splunk.com/"><img src="img/splunk.png" alt="Splunk"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="http://www.kpcb.com/"><img src="img/kpcb.png" alt="KPCB"></a></div>
+              </div>
+              <div class="row">
+                <div class="col-md-offset-3 col-md-2 spring-sponsor"><a href="https://www.namecheap.com/"><img style="padding-top: 5%" src="img/namecheap.png" alt="Namecheap"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="https://www.myo.com/"><img style="padding-top: 15%" src="img/thalmic_brand.png" alt="Thalmic Labs"></a></div>
+                <div class="col-md-2 spring-sponsor"><a href="https://github.com/"><img src="img/github.png" alt="GitHub"></a></div>
+              </div>
+              <h4>
+                And a special shout-out to our awesome partners:
+              </h4>
+              <div class="row">
+                <div class="col-md-4 partner"><a href="https://thayer.dartmouth.edu/"><img style="padding-top: 5%" class="partner-img" src="img/thayer.png" alt="Thayer School of Engineering"></a></div>
+                <div class="col-md-4 partner"><a href="https://mlh.io/"><img class="partner-img" src="img/mlh.png" alt="Major League Hacking"></a></div>
+                <div class="col-md-4 partner"><a href="http://dali.dartmouth.edu/"><img class="partner-img" src="img/dali.png" alt="DALI Lab at Dartmouth College"></a></div>
+              </div>
+              <br />
+              <br />
+            </div>
+          </div>
+          <!-- Apply -->
+          <div id="apply" class="row">
+            <div class="col-md-12 text-center">
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <!-- Change the width and height values to suit you best -->
+                      <div class="typeform-widget" data-url="https://hackdartmouth.typeform.com/to/SFbXUX" data-text="HackDartmouth II" style="width:100%;height:80vh;"></div>
+                      <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <div id="footer" class="row">
+            <div class="col-md-12 text-center">
+              <a href="https://www.facebook.com/hackDartmouth" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+              <a href="https://twitter.com/hackdartmouth" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/company/6588725?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A6588725%2Cidx%3A1-1-1%2CtarId%3A1439363530321%2Ctas%3Ahackdartmouth" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/hackdartmouth" target="_blank"><i class="fa fa-github fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
+            </div>
+          </div>
+
         </div>
 
-        <div id="particles-js" class="full-height"> </div>
-        <script src="js/vendor/particles.min.js"></script>
-
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="js/vendor/pine-schedule.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
