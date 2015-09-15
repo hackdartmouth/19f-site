@@ -121,13 +121,17 @@ window.PineSchedule.load = function(dom_id, data) {
       }
     };
     this.get_displayed_info = function() {
-      switch(this.display_type) {
-        case TB_DISPLAY_TYPE.ONE_LINE:
-          return this.event.time_range + " | <b>" + this.event.name + "</b> <i>" + this.event.location + "</i>";
-        case TB_DISPLAY_TYPE.MULTI_LINE_FIRST:
-          return this.event.time_range + " | <b>" + this.event.name + "</b>";
-        case TB_DISPLAY_TYPE.MULTI_LINE_SECOND:
-          return "<i>" + this.event.location + "</i>";
+      if (this.event) {
+        var time_range = this.event.hasOwnProperty("time_range") ? this.event.time_range + " | " : "";
+        var location = this.event.hasOwnProperty("location") ? "<i>" + this.event.location + "</i>" : "";
+        switch(this.display_type) {
+          case TB_DISPLAY_TYPE.ONE_LINE:
+            return time_range + "<b>" + this.event.name + "</b> " + location;
+          case TB_DISPLAY_TYPE.MULTI_LINE_FIRST:
+            return time_range + "<b>" + this.event.name + "</b>";
+          case TB_DISPLAY_TYPE.MULTI_LINE_SECOND:
+            return location;
+        }
       }
     };
     this.color = function() {

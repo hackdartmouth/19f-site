@@ -1,22 +1,13 @@
-/*
+
 PINE_SCHEDULE = {
   OPTIONALS: {
     "borders": true,
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  RANGE: {
-    "start": 0.0,
-    "end": 24.0
-  },
-  D1RANGE: {
-    "start" : 12.0,
-    "end" : 24.0
-  },
-  D2RANGE: {
-    "start" : 0.0,
-    "end" : 12.0
-  }
+  DAY_1_START: 11.0,
+  DAY_2_START: 6.0,
+  HOURS_TO_SHOW: 14,
 };
 
 PineSchedule.load(".day-1", {
@@ -24,15 +15,49 @@ PineSchedule.load(".day-1", {
   "day_of_week": "SAT",
   "month": "OCT",
   "day": 3,
-  "range": PINE_SCHEDULE.D1RANGE,
+  "range": {
+    "start": PINE_SCHEDULE.DAY_1_START,
+    "end": PINE_SCHEDULE.DAY_1_START + PINE_SCHEDULE.HOURS_TO_SHOW
+  },
   "events": [
     {
-      "time_range": "12pm-12am",
-      "name": "HACKING!!!",
-      "location": "Thayer School of Engineering",
+      "time_range": "11am-12pm",
+      "name": "Opening Ceremony",
+      "location": "Location TBD",
+      "color": "#E0CC5C",
+      "start": 11.0,
+      "end": 12.5
+    },
+    {
+      "time_range": "12:30pm-1:30pm",
+      "name": "Lunch and Team Formation",
+      "location": "Location TBD",
+      "color": "#B2D96D",
+      "start": 12.5,
+      "end": 13.5
+    },
+    {
+      "time_range": "1:30pm",
+      "name": "Hacking begins!",
       "color": "#8BB9B6",
-      "start": 12.0,
-      "end": 24.0
+      "start": 13.5,
+      "end": 14.0
+    },
+    {
+      "time_range": "6pm",
+      "name": "Dinner",
+      "location": "Location TBD",
+      "color": "#B2D96D",
+      "start": 18.0,
+      "end": 19.0
+    },
+    {
+      "time_range" : "12am-1am",
+      "name": "Midnight Activity by Major League Hacking",
+      "location": "Location TBD",
+      "color": "#D7766B",
+      "start": 24.0,
+      "end": 25.0
     },
   ]
 });
@@ -42,19 +67,53 @@ PineSchedule.load(".day-2", {
   "day_of_week": "SUN",
   "month": "OCT",
   "day": 4,
-  "range": PINE_SCHEDULE.D2RANGE,
+  "range": {
+    "start": PINE_SCHEDULE.DAY_2_START,
+    "end": PINE_SCHEDULE.DAY_2_START + PINE_SCHEDULE.HOURS_TO_SHOW
+  },
   "events": [
     {
-      "time_range" : "12am-12pm",
-      "name": "MOAR HACKING!!!",
-      "location": "Thayer School of Engineering",
-      "color": "#BFDC85",
-      "start": 0.0,
-      "end": 12.0
+      "time_range": "8am-9:30am",
+      "name": "Breakfast",
+      "location": "Location TBD",
+      "color": "#B2D96D",
+      "start": 8.0,
+      "end": 9.5
+    },
+    {
+      "time_range": "10:30am",
+      "name": "Project Submissions Due",
+      "color": "#8BB9B6",
+      "start": 10.5,
+      "end": 11.0,
+    },
+    {
+      "time_range": "11am-12pm",
+      "name": "Project demos and First Round Judging",
+      "location": "Location TBD",
+      "color": "#8BB9B6",
+      "start": 11.0,
+      "end": 12.0,
+    },
+    {
+      "time_range": "12pm-1pm",
+      "name": "Lunch",
+      "location": "Location TBD",
+      "color": "#B2D96D",
+      "start": 12.0,
+      "end": 13.0
+    },
+    {
+      "time_range": "1pm-3pm",
+      "name": "Closing Ceremony",
+      "location": "Location TBD",
+      "color": "#E0CC5C",
+      "start": 13.0,
+      "end": 15.0
     },
   ]
 });
-*/
+
 
 var playing = false;
 var nyanCat = new Audio("misc/nyancat.mp3");
@@ -85,11 +144,9 @@ function jumpToSection(event, targetSection){
     case "s1":
       controlString = "#about";
       break;
-    /*
     case "s2":
       controlString = "#schedule";
       break;
-    */
     case "s3":
       controlString = "#faq";
       break;
@@ -147,9 +204,9 @@ $(document).ready(function(){
       $(".sponsors.nav-button").addClass('active')
     } else if (scrollPosition >= $('#faq').offset().top) {
       $(".faq.nav-button").addClass('active')
-    } /*else if (scrollPosition >= $('#schedule').offset().top) {
+    } else if (scrollPosition >= $('#schedule').offset().top) {
       $(".schedule.nav-button").addClass('active')
-    } */else if (scrollPosition >= $('#about').offset().top) {
+    } else if (scrollPosition >= $('#about').offset().top) {
       $(".about.nav-button").addClass('active')
     }
   }

@@ -321,20 +321,17 @@ body {
     max-height: 100%;
 }
 
-.spring-sponsor {
+.tree {
+    padding: 1% 1% 1% 1%;
+}
 
+.shrub {
+    padding: 2% 2% 2% 2%;
 }
 
 .spring-sponsor img {
     width: 100%;
     opacity: 0.6;
-}
-.redwood {
-
-}
-
-.redwood-img {
-    width: ;
 }
 
 .partner {
