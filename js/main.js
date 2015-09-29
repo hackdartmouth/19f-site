@@ -5,9 +5,9 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_1_START: 11.0,
+  DAY_1_START: 10.0,
   DAY_2_START: 6.0,
-  HOURS_TO_SHOW: 14,
+  HOURS_TO_SHOW: 15,
 };
 
 PineSchedule.load(".day-1", {
@@ -21,9 +21,17 @@ PineSchedule.load(".day-1", {
   },
   "events": [
     {
+      "time_range": "10am-11am",
+      "name": "Registration",
+      "location": "Moore Hall, First Floor",
+      "color": "#8BB9B6",
+      "start": 10.0,
+      "end": 11.0
+    },
+    {
       "time_range": "11am-12pm",
       "name": "Opening Ceremony",
-      "location": "Location TBD",
+      "location": "Moore Filene Auditorium",
       "color": "#E0CC5C",
       "start": 11.0,
       "end": 12.5
@@ -31,7 +39,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "12:30pm-1:30pm",
       "name": "Lunch and Team Formation",
-      "location": "Location TBD",
+      "location": "Kemeny and Haldeman Halls",
       "color": "#B2D96D",
       "start": 12.5,
       "end": 13.5
@@ -44,17 +52,17 @@ PineSchedule.load(".day-1", {
       "end": 14.0
     },
     {
-      "time_range": "6pm",
+      "time_range": "7pm",
       "name": "Dinner",
-      "location": "Location TBD",
+      "location": "Kemeny and Haldeman Halls",
       "color": "#B2D96D",
-      "start": 18.0,
-      "end": 19.0
+      "start": 19.0,
+      "end": 20.0
     },
     {
       "time_range" : "12am-1am",
       "name": "Midnight Activity by Major League Hacking",
-      "location": "Location TBD",
+      "location": "Kemeny and Haldeman Halls",
       "color": "#D7766B",
       "start": 24.0,
       "end": 25.0
@@ -75,7 +83,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "8am-9:30am",
       "name": "Breakfast",
-      "location": "Location TBD",
+      "location": "Kemeny and Haldeman Halls",
       "color": "#B2D96D",
       "start": 8.0,
       "end": 9.5
@@ -98,7 +106,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "12pm-1pm",
       "name": "Lunch",
-      "location": "Location TBD",
+      "location": "Kemeny and Haldeman Halls",
       "color": "#B2D96D",
       "start": 12.0,
       "end": 13.0
@@ -106,14 +114,13 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "1pm-3pm",
       "name": "Closing Ceremony",
-      "location": "Location TBD",
+      "location": "Moore Filene Auditorium",
       "color": "#E0CC5C",
       "start": 13.0,
       "end": 15.0
     },
   ]
 });
-
 
 var playing = false;
 var nyanCat = new Audio("misc/nyancat.mp3");
