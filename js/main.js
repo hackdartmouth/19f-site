@@ -23,7 +23,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "11am-12pm",
       "name": "Opening Ceremony",
-      "location": "Location TBD",
+      "location": "Filene Auditorium - Moore",
       "color": "#E0CC5C",
       "start": 11.0,
       "end": 12.5
@@ -31,7 +31,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "12:30pm-1:30pm",
       "name": "Lunch and Team Formation",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#B2D96D",
       "start": 12.5,
       "end": 13.5
@@ -46,7 +46,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "6pm",
       "name": "Dinner",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#B2D96D",
       "start": 18.0,
       "end": 19.0
@@ -54,7 +54,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range" : "12am-1am",
       "name": "Midnight Activity by Major League Hacking",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#D7766B",
       "start": 24.0,
       "end": 25.0
@@ -75,7 +75,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "8am-9:30am",
       "name": "Breakfast",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#B2D96D",
       "start": 8.0,
       "end": 9.5
@@ -90,7 +90,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "11am-12pm",
       "name": "Project demos and First Round Judging",
-      "location": "Location TBD",
+      "location": "Kemeny and Haldeman",
       "color": "#8BB9B6",
       "start": 11.0,
       "end": 12.0,
@@ -98,7 +98,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "12pm-1pm",
       "name": "Lunch",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#B2D96D",
       "start": 12.0,
       "end": 13.0
@@ -106,11 +106,19 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "1pm-3pm",
       "name": "Closing Ceremony",
-      "location": "Location TBD",
+      "location": "Filene Auditorium - Moore",
       "color": "#E0CC5C",
       "start": 13.0,
       "end": 15.0
     },
+    {
+      "time_range": "3:30pm",
+      "name": "Buses to NY and Boston depart",
+      "location": "The Hopkins Center for the Arts",
+      "color": "#E6F176",
+      "start": 15.5,
+      "end": 16.0
+    }
   ]
 });
 
