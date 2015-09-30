@@ -38,18 +38,35 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "12:30-1:30pm",
-      "name": "Lunch and Team Formation",
+      "name": "Lunch, Team Formation, Hacking!",
       "location": "Kemeny",
       "color": "#B2D96D",
       "start": 12.5,
       "end": 13.5
     },
     {
-      "time_range": "1:30pm",
-      "name": "Hacking begins!",
-      "color": "#8BB9B6",
+      "time_range": "1:30-2:30pm",
+      "name": "Dartmouth Entrepreneurial Network Talk",
+      "location": "TBD",
+      "color": "#E6F176",
       "start": 13.5,
-      "end": 14.0
+      "end": 14.5
+    },
+    {
+      "time_range": "2:30-3:30pm",
+      "name": "Intralinks Workshop",
+      "location": "TBD",
+      "color": "#E6F176",
+      "start": 14.5,
+      "end": 15.5
+    },
+    {
+      "time_range": "3:30-4:30pm",
+      "name": "Thayer Hardware Workshop",
+      "location": "TBD",
+      "color": "#E6F176",
+      "start": 15.5,
+      "end": 16.5
     },
     {
       "time_range": "6pm",
