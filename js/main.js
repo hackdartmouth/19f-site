@@ -10,6 +10,28 @@ PINE_SCHEDULE = {
   HOURS_TO_SHOW: 15,
 };
 
+PineSchedule.load(".day-0", {
+  "optionals": PINE_SCHEDULE.OPTIONALS,
+  "day_of_week": "FRI",
+  "month": "OCT",
+  "day": 2,
+  "range": {
+    "start": 16.0,
+    "end": 17.0
+  },
+  "events": [
+    {
+      "time_range": "4-5pm",
+      "name": "Microsoft Workshop",
+      "location": "Maclean B01",
+      "color": "#E6F176",
+      "start": 16.0,
+      "end": 17.0
+    },
+  ]
+});
+
+
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
   "day_of_week": "SAT",
