@@ -5,9 +5,9 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_1_START: 11.0,
-  DAY_2_START: 6.0,
-  HOURS_TO_SHOW: 14,
+  DAY_1_START: 10.0,
+  DAY_2_START: 7.0,
+  HOURS_TO_SHOW: 15,
 };
 
 PineSchedule.load(".day-1", {
@@ -20,6 +20,14 @@ PineSchedule.load(".day-1", {
     "end": PINE_SCHEDULE.DAY_1_START + PINE_SCHEDULE.HOURS_TO_SHOW
   },
   "events": [
+    {
+      "time_range": "10-11am",
+      "name": "Registration",
+      "location": "Filene Auditorium - Moore",
+      "color": "#8BB9B6",
+      "start": 10.0,
+      "end": 11.0
+    },
     {
       "time_range": "11am-12pm",
       "name": "Opening Ceremony",
