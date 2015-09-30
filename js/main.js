@@ -91,12 +91,12 @@ PineSchedule.load(".day-1", {
       "end": 16.5
     },
     {
-      "time_range": "6pm",
+      "time_range": "7pm",
       "name": "Dinner",
       "location": "Kemeny",
       "color": "#B2D96D",
-      "start": 18.0,
-      "end": 19.0
+      "start": 19.0,
+      "end": 20.0
     },
     {
       "time_range" : "12-1am",
