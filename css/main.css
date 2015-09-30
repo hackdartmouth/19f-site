@@ -208,6 +208,10 @@ body {
     color: #328781;
 }
 
+.schedule {
+    padding-bottom: 20px;
+}
+
 #faq {
     background-color: rgb(41, 42, 37);
     color: white;

@@ -5,10 +5,32 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_1_START: 11.0,
-  DAY_2_START: 6.0,
-  HOURS_TO_SHOW: 14,
+  DAY_1_START: 10.0,
+  DAY_2_START: 7.0,
+  HOURS_TO_SHOW: 15,
 };
+
+PineSchedule.load(".day-0", {
+  "optionals": PINE_SCHEDULE.OPTIONALS,
+  "day_of_week": "FRI",
+  "month": "OCT",
+  "day": 2,
+  "range": {
+    "start": 16.0,
+    "end": 17.0
+  },
+  "events": [
+    {
+      "time_range": "4-5pm",
+      "name": "Microsoft Workshop",
+      "location": "Maclean B01",
+      "color": "#E6F176",
+      "start": 16.0,
+      "end": 17.0
+    },
+  ]
+});
+
 
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
@@ -21,40 +43,65 @@ PineSchedule.load(".day-1", {
   },
   "events": [
     {
+      "time_range": "10-11am",
+      "name": "Registration",
+      "location": "Filene Auditorium - Moore",
+      "color": "#8BB9B6",
+      "start": 10.0,
+      "end": 11.0
+    },
+    {
       "time_range": "11am-12pm",
       "name": "Opening Ceremony",
-      "location": "Location TBD",
+      "location": "Filene Auditorium - Moore",
       "color": "#E0CC5C",
       "start": 11.0,
       "end": 12.5
     },
     {
-      "time_range": "12:30pm-1:30pm",
-      "name": "Lunch and Team Formation",
-      "location": "Location TBD",
+      "time_range": "12:30-1:30pm",
+      "name": "Lunch, Team Formation, Hacking!",
+      "location": "Kemeny",
       "color": "#B2D96D",
       "start": 12.5,
       "end": 13.5
     },
     {
-      "time_range": "1:30pm",
-      "name": "Hacking begins!",
-      "color": "#8BB9B6",
+      "time_range": "1:30-2:30pm",
+      "name": "DEN Talk: Beyond a Hack",
+      "location": "Kemeny 008",
+      "color": "#E6F176",
       "start": 13.5,
-      "end": 14.0
+      "end": 14.5
     },
     {
-      "time_range": "6pm",
+      "time_range": "2:30-3:30pm",
+      "name": "Intralinks Workshop",
+      "location": "Kemeny 008",
+      "color": "#E6F176",
+      "start": 14.5,
+      "end": 15.5
+    },
+    {
+      "time_range": "3:30-4:30pm",
+      "name": "Thayer Hardware Workshop",
+      "location": "Kemeny 008",
+      "color": "#E6F176",
+      "start": 15.5,
+      "end": 16.5
+    },
+    {
+      "time_range": "7pm",
       "name": "Dinner",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#B2D96D",
-      "start": 18.0,
-      "end": 19.0
+      "start": 19.0,
+      "end": 20.0
     },
     {
-      "time_range" : "12am-1am",
+      "time_range" : "12-1am",
       "name": "Midnight Activity by Major League Hacking",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#D7766B",
       "start": 24.0,
       "end": 25.0
@@ -73,9 +120,9 @@ PineSchedule.load(".day-2", {
   },
   "events": [
     {
-      "time_range": "8am-9:30am",
+      "time_range": "8-9:30am",
       "name": "Breakfast",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#B2D96D",
       "start": 8.0,
       "end": 9.5
@@ -90,27 +137,35 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "11am-12pm",
       "name": "Project demos and First Round Judging",
-      "location": "Location TBD",
+      "location": "Kemeny and Haldeman",
       "color": "#8BB9B6",
       "start": 11.0,
       "end": 12.0,
     },
     {
-      "time_range": "12pm-1pm",
+      "time_range": "12-1pm",
       "name": "Lunch",
-      "location": "Location TBD",
+      "location": "Kemeny",
       "color": "#B2D96D",
       "start": 12.0,
       "end": 13.0
     },
     {
-      "time_range": "1pm-3pm",
+      "time_range": "1-3pm",
       "name": "Closing Ceremony",
-      "location": "Location TBD",
+      "location": "Filene Auditorium - Moore",
       "color": "#E0CC5C",
       "start": 13.0,
       "end": 15.0
     },
+    {
+      "time_range": "3:30pm",
+      "name": "Buses to NY and Boston depart",
+      "location": "The Hopkins Center for the Arts",
+      "color": "#BFBFBF",
+      "start": 15.5,
+      "end": 16.5
+    }
   ]
 });
 
