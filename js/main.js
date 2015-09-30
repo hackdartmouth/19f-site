@@ -164,7 +164,7 @@ PineSchedule.load(".day-2", {
       "location": "The Hopkins Center for the Arts",
       "color": "#BFBFBF",
       "start": 15.5,
-      "end": 16.0
+      "end": 16.5
     }
   ]
 });
