@@ -29,7 +29,7 @@ PineSchedule.load(".day-1", {
       "end": 12.5
     },
     {
-      "time_range": "12:30pm-1:30pm",
+      "time_range": "12:30-1:30pm",
       "name": "Lunch and Team Formation",
       "location": "Kemeny",
       "color": "#B2D96D",
@@ -52,7 +52,7 @@ PineSchedule.load(".day-1", {
       "end": 19.0
     },
     {
-      "time_range" : "12am-1am",
+      "time_range" : "12-1am",
       "name": "Midnight Activity by Major League Hacking",
       "location": "Kemeny",
       "color": "#D7766B",
@@ -73,7 +73,7 @@ PineSchedule.load(".day-2", {
   },
   "events": [
     {
-      "time_range": "8am-9:30am",
+      "time_range": "8-9:30am",
       "name": "Breakfast",
       "location": "Kemeny",
       "color": "#B2D96D",
@@ -96,7 +96,7 @@ PineSchedule.load(".day-2", {
       "end": 12.0,
     },
     {
-      "time_range": "12pm-1pm",
+      "time_range": "12-1pm",
       "name": "Lunch",
       "location": "Kemeny",
       "color": "#B2D96D",
@@ -104,7 +104,7 @@ PineSchedule.load(".day-2", {
       "end": 13.0
     },
     {
-      "time_range": "1pm-3pm",
+      "time_range": "1-3pm",
       "name": "Closing Ceremony",
       "location": "Filene Auditorium - Moore",
       "color": "#E0CC5C",
@@ -115,7 +115,7 @@ PineSchedule.load(".day-2", {
       "time_range": "3:30pm",
       "name": "Buses to NY and Boston depart",
       "location": "The Hopkins Center for the Arts",
-      "color": "#E6F176",
+      "color": "#BFBFBF",
       "start": 15.5,
       "end": 16.0
     }
