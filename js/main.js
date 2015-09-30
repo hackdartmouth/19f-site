@@ -46,8 +46,8 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "1:30-2:30pm",
-      "name": "Dartmouth Entrepreneurial Network Talk",
-      "location": "TBD",
+      "name": "DEN Talk: Beyond a Hack",
+      "location": "Kemeny 008",
       "color": "#E6F176",
       "start": 13.5,
       "end": 14.5
@@ -55,7 +55,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "2:30-3:30pm",
       "name": "Intralinks Workshop",
-      "location": "TBD",
+      "location": "Kemeny 008",
       "color": "#E6F176",
       "start": 14.5,
       "end": 15.5
@@ -63,7 +63,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "3:30-4:30pm",
       "name": "Thayer Hardware Workshop",
-      "location": "TBD",
+      "location": "Kemeny 008",
       "color": "#E6F176",
       "start": 15.5,
       "end": 16.5
