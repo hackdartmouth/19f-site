@@ -136,18 +136,18 @@ PineSchedule.load(".day-2", {
       "end": 9.5
     },
     {
-      "time_range": "10:30am",
+      "time_range": "10am",
       "name": "Project Submissions Due",
       "color": "#8BB9B6",
-      "start": 10.5,
-      "end": 11.0,
+      "start": 10.0,
+      "end": 10.5,
     },
     {
-      "time_range": "11am-12pm",
+      "time_range": "10:30am-12pm",
       "name": "Project demos and First Round Judging",
       "location": "Kemeny and Haldeman",
       "color": "#8BB9B6",
-      "start": 11.0,
+      "start": 10.5,
       "end": 12.0,
     },
     {
