@@ -3,6 +3,11 @@
     src: url('../misc/PressStart2P.ttf');
 }
 
+@font-face {
+    font-family: menlo;
+    src: url('../misc/Menlo-Regular.ttf');
+}
+
 body {
     font-family: menlo;
 }

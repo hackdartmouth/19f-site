@@ -92,7 +92,7 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "4:30-5pm",
-      "name": "Tech Resume Workshop",
+      "name": "Presenting Your Experience on Paper",
       "location": "Kemeny 008",
       "color": "#E6F176",
       "start": 16.5,
