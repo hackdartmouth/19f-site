@@ -84,7 +84,7 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "3:30-4:30pm",
-      "name": "Thayer Hardware Workshop",
+      "name": "Thayer Workshop: Hacking the Raspberry Pi",
       "location": "Kemeny 008",
       "color": "#E6F176",
       "start": 15.5,
@@ -108,7 +108,7 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range" : "12-1am",
-      "name": "Midnight Activity by Major League Hacking",
+      "name": "Midnight Activity!",
       "location": "Kemeny",
       "color": "#D7766B",
       "start": 24.0,
