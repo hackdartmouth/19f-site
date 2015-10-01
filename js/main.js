@@ -91,6 +91,14 @@ PineSchedule.load(".day-1", {
       "end": 16.5
     },
     {
+      "time_range": "4:30-5pm",
+      "name": "Tech Resume Workshop",
+      "location": "Kemeny 008",
+      "color": "#E6F176",
+      "start": 16.5,
+      "end": 17.0
+    },
+    {
       "time_range": "7pm",
       "name": "Dinner",
       "location": "Kemeny",
