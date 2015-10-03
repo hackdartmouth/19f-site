@@ -68,7 +68,7 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "1:30-2:30pm",
-      "name": "DEN Talk: Beyond a Hack",
+      "name": "DEN Talk: Beyond the Hack",
       "location": "Kemeny 008",
       "color": "#E6F176",
       "start": 13.5,
