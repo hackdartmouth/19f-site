@@ -1,4 +1,3 @@
-
 PINE_SCHEDULE = {
   OPTIONALS: {
     "borders": true,
@@ -60,8 +59,8 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "12:30-1:30pm",
-      "name": "Lunch, Team Formation, Hacking!",
-      "location": "Kemeny",
+      "name": "Lunch (Moe's), Team Formation, Hacking!",
+      "location": "Haldeman",
       "color": "#B2D96D",
       "start": 12.5,
       "end": 13.5
@@ -100,8 +99,8 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "7pm",
-      "name": "Dinner",
-      "location": "Kemeny",
+      "name": "Dinner (Gas Station Chinese)",
+      "location": "Haldeman",
       "color": "#B2D96D",
       "start": 19.0,
       "end": 20.0
@@ -109,7 +108,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range" : "12-1am",
       "name": "Midnight Activity!",
-      "location": "Kemeny",
+      "location": "Haldeman",
       "color": "#D7766B",
       "start": 24.0,
       "end": 25.0
@@ -129,8 +128,8 @@ PineSchedule.load(".day-2", {
   "events": [
     {
       "time_range": "8-9:30am",
-      "name": "Breakfast",
-      "location": "Kemeny",
+      "name": "Breakfast (Lou's)",
+      "location": "Haldeman",
       "color": "#B2D96D",
       "start": 8.0,
       "end": 9.5
@@ -145,15 +144,15 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "10:30am-12pm",
       "name": "Project demos and First Round Judging",
-      "location": "Kemeny and Haldeman",
+      "location": "Kemeny 006 and 007",
       "color": "#8BB9B6",
       "start": 10.5,
       "end": 12.0,
     },
     {
       "time_range": "12-1pm",
-      "name": "Lunch",
-      "location": "Kemeny",
+      "name": "Lunch (Subway)",
+      "location": "Haldeman",
       "color": "#B2D96D",
       "start": 12.0,
       "end": 13.0
