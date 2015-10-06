@@ -3,6 +3,11 @@
     src: url('../misc/PressStart2P.ttf');
 }
 
+@font-face {
+    font-family: menlo;
+    src: url('../misc/Menlo-Regular.ttf');
+}
+
 body {
     font-family: menlo;
 }
@@ -208,6 +213,10 @@ body {
     color: #328781;
 }
 
+.schedule {
+    padding-bottom: 20px;
+}
+
 #faq {
     background-color: rgb(41, 42, 37);
     color: white;
@@ -343,7 +352,6 @@ body {
 }
 
 /* ---------------------- DO NOT EDIT BELOW THIS LINE ---------------------- */
-
 /*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
