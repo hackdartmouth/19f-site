@@ -228,6 +228,10 @@ function jumpToSection(event, targetSection){
 }
 
 $(document).ready(function(){
+
+  // hide the schedule for now
+  $('#schedule').hide();
+
   var faqHeight = $('#faq').height();
   var faqWidth = $('#faq').width();
   var lineHeight = $('#linecount-start').height();
