@@ -21,9 +21,16 @@ PineSchedule.load(".day-1", {
   },
   "events": [
     {
+      "time_range": "4:45pm",
+      "name": "Pizza",
+      "color": "#B2D96D",
+      "start": 16.5,
+      "end": 17.0
+    },
+    {
       "time_range": "5-6pm",
       "name": "Tech Panel",
-      "location": "Location TBD",
+      "location": "DEN",
       "color": "#E6F176",
       "start": 17.0,
       "end": 18.0
@@ -31,7 +38,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "6-7pm",
       "name": "HTML/CSS Workshop",
-      "location": "Location TBD",
+      "location": "DEN",
       "color": "#E6F176",
       "start": 18.0,
       "end": 19.0
@@ -39,7 +46,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "7-8pm",
       "name": "Building Bots Workshop",
-      "location": "Location TBD",
+      "location": "DEN",
       "color": "#E6F176",
       "start": 19.0,
       "end": 20.0
