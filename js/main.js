@@ -174,6 +174,8 @@ function jumpToSection(event, targetSection){
 
 $(document).ready(function(){
 
+  $('#apply').hide();
+
   var faqHeight = $('#faq').height();
   var faqWidth = $('#faq').width();
   var lineHeight = $('#linecount-start').height();
