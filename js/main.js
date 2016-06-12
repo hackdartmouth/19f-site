@@ -174,6 +174,7 @@ function jumpToSection(event, targetSection){
 
 $(document).ready(function(){
 
+  $('#schedule').hide();
   $('#apply').hide();
 
   var faqHeight = $('#faq').height();
