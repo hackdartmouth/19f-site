@@ -12,42 +12,75 @@ PINE_SCHEDULE = {
 
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "FRIDAY",
-  "month": "APRIL",
-  "day": 15,
+  "day_of_week": "SATURDAY",
+  "month": "September",
+  "day": 24,
   "range": {
     "start": PINE_SCHEDULE.DAY_1_START,
     "end": PINE_SCHEDULE.DAY_1_START + PINE_SCHEDULE.HOURS_TO_SHOW
   },
   "events": [
     {
-      "time_range": "4:45pm",
-      "name": "Pizza",
+      "time_range": "12:00pm-1:30pm",
+      "name": "Registration",
+      "location": "Glycofi Atrium for sponsors, Cook Auditorium for participants",
+      "color": "#8BB9B6",
+      "start": 12.0,
+      "end": 13.5
+    },
+    {
+      "time_range": "1:30pm-2:00pm",
+      "name": "Opening Ceremony",
+      "location": "Cook Auditorium",
+      "color": "#E6F176",
+      "start": 13.5,
+      "end": 14.0
+    },
+    {
+      "time_range": "2pm",
+      "name": "Hacking Begins, Lunch",
+      "location": "Glycofi Atrium",
       "color": "#B2D96D",
+      "start": 14.0,
+      "end": 14.5
+    },
+    {
+      "time_range": "2:30pm",
+      "name": "Workshop: Thayer School - Sensors and Actuators on Arduino and Pi",
+      "location": "TBA",
+      "color": "#E6F176",
+      "start": 14.5,
+      "end": 15.5
+    },
+    {
+      "time_range": "3:30pm",
+      "name": "Workshop: Intralinks - Introduction to APIs",
+      "location": "TBA",
+      "color": "#E6F176",
+      "start": 15.5,
+      "end": 16
+    },
+    {
+      "time_range": "4:00pm",
+      "name": "Workshop: WebDev - Introduction to HTML/CSS with Bootstrap",
+      "location": "TBA",
+      "color": "#E6F176",
+      "start": 16,
+      "end": 16.5
+    },
+    {
+      "time_range": "4:30pm",
+      "name": "Workshop: Appian - ReactJS",
+      "location": "TBA",
+      "color": "#E6F176",
       "start": 16.5,
-      "end": 17.0
+      "end": 17
     },
     {
-      "time_range": "5-6pm",
-      "name": "Tech Panel",
-      "location": "DEN",
-      "color": "#E6F176",
-      "start": 17.0,
-      "end": 18.0
-    },
-    {
-      "time_range": "6-7pm",
-      "name": "HTML/CSS Workshop",
-      "location": "DEN",
-      "color": "#E6F176",
-      "start": 18.0,
-      "end": 19.0
-    },
-    {
-      "time_range": "7-8pm",
-      "name": "Building Bots Workshop",
-      "location": "DEN",
-      "color": "#E6F176",
+      "time_range": "7pm-8pm",
+      "name": "Dinner",
+      "location": "Glycofi Atrium",
+      "color": "#B2D96D",
       "start": 19.0,
       "end": 20.0
     }
@@ -56,9 +89,9 @@ PineSchedule.load(".day-1", {
 
 PineSchedule.load(".day-2", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "SATURDAY",
-  "month": "APRIL",
-  "day": 16,
+  "day_of_week": "SUNDAY",
+  "month": "SEPTEMBER",
+  "day": 25,
   "range": {
     "start": PINE_SCHEDULE.DAY_2_START,
     "end": PINE_SCHEDULE.DAY_2_START + PINE_SCHEDULE.HOURS_TO_SHOW
@@ -66,57 +99,36 @@ PineSchedule.load(".day-2", {
   "events": [
   {
       "time_range": "8am",
-      "name": "Registration Begins and Continues Throughout the Day",
-      "location": "DEN - 4 Currier Place",
-      "color": "#8BB9B6",
-      "start": 8.0,
-      "end":9.0
-    },
-    {
-      "time_range": "9am",
-      "name": "Breakfast (Lou's)",
-      "location": "DEN",
+      "name": "Breakfast",
+      "location": "Glycofi Atrium",
       "color": "#B2D96D",
-      "start": 9.0,
-      "end": 10.0
+      "start": 8.0,
+      "end":10.0
     },
     {
-      "name": "Hacking!",
-      "location": "DEN",
-      "color": "#D7766B",
-      "start": 10.0,
-      "end": 12.0
-    },
-    {
-      "time_range": "12-1pm",
-      "name": "Lunch (Gas Station Chinese)",
-      "location": "DEN",
+      "time_range": "12pm-1pm",
+      "name": "Lunch",
+      "location": "Glycofi Atrium",
       "color": "#B2D96D",
       "start": 12.0,
       "end": 13.0
     },
     {
-      "name": "Hacking!",
-      "location": "DEN",
+      "time_range": "2pm-3:30pm",
+      "name": "Demos + First-Round Judging",
+      "location": "Glycofi Atrium",
       "color": "#D7766B",
-      "start": 13.0,
-      "end": 19.0
+      "start": 14.0,
+      "end": 15.5
     },
     {
-      "time_range": "7pm",
-      "name": "Dinner (Boloco)",
-      "location": "DEN",
-      "color": "#B2D96D",
-      "start": 19.0,
-      "end": 20.0
-    },
-    {
-      "time_range": "8pm",
-      "name": "Judging and Prizes",
-      "location": "DEN",
-      "color": "#E0CC5C",
-      "start": 20.0,
-      "end": 21.0
+
+      "time_range": "3:30pm-4:30pm",
+      "name": "Closing Ceremony",
+      "location": "Cook auditorium",
+      "color": "#8BB9B6",
+      "start": 15.5,
+      "end": 16.5
     }
   ]
 });
@@ -174,7 +186,7 @@ function jumpToSection(event, targetSection){
 
 $(document).ready(function(){
 
-  $('#schedule').hide();
+  //$('#schedule').hide();
   //$('#apply').hide();
 
   var faqHeight = $('#faq').height();
