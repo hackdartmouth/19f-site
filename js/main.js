@@ -47,7 +47,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "2:30pm",
       "name": "Workshop: Thayer School - Sensors and Actuators on Arduino and Pi",
-      "location": "TBA",
+      "location": "Couch Lab",
       "color": "#E6F176",
       "start": 14.5,
       "end": 15.5
@@ -55,7 +55,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "3:30pm",
       "name": "Workshop: Intralinks - Introduction to APIs",
-      "location": "TBA",
+      "location": "C100 Spanos Auditorium",
       "color": "#E6F176",
       "start": 15.5,
       "end": 16
@@ -63,7 +63,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "4:00pm",
       "name": "Workshop: WebDev - Introduction to HTML/CSS with Bootstrap",
-      "location": "TBA",
+      "location": "MB01 Zaleski Auditorium",
       "color": "#E6F176",
       "start": 16,
       "end": 16.5
@@ -71,7 +71,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "4:30pm",
       "name": "Workshop: Appian - ReactJS",
-      "location": "TBA",
+      "location": "C100 Spanos Auditorium",
       "color": "#E6F176",
       "start": 16.5,
       "end": 17
@@ -125,7 +125,7 @@ PineSchedule.load(".day-2", {
 
       "time_range": "3:30pm-4:30pm",
       "name": "Closing Ceremony",
-      "location": "Cook auditorium",
+      "location": "Cook Auditorium",
       "color": "#8BB9B6",
       "start": 15.5,
       "end": 16.5
