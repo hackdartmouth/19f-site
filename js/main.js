@@ -4,131 +4,115 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_1_START: 8.0,
-  DAY_2_START: 8.0,
+  DAY_1_START: 9.0,
+  DAY_2_START: 9.0,
   HOURS_TO_SHOW: 13,
 };
 
 
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "SATURDAY",
-  "month": "September",
-  "day": 24,
+  "day_of_week": "FRIDAY",
+  "month": "APRIL",
+  "day": 7,
   "range": {
     "start": PINE_SCHEDULE.DAY_1_START,
     "end": PINE_SCHEDULE.DAY_1_START + PINE_SCHEDULE.HOURS_TO_SHOW
   },
   "events": [
     {
-      "time_range": "12:00pm-1:30pm",
-      "name": "Registration",
-      "location": "Glycofi Atrium for sponsors, Cook Auditorium for participants",
+      "time_range": "5:30pm-6:30pm",
+      "name": "Google Web-Dev Workshop",
+      "location": "Collis 101",
       "color": "#8BB9B6",
-      "start": 12.0,
-      "end": 13.5
+      "start": 17.5,
+      "end": 18.5
     },
     {
-      "time_range": "1:30pm-2:00pm",
-      "name": "Opening Ceremony",
-      "location": "Cook Auditorium",
+      "time_range": "6:30pm-7:00pm",
+      "name": "Dinner from Tuk-Tuk Thai",
+      "location": "Collis 101",
       "color": "#E6F176",
-      "start": 13.5,
-      "end": 14.0
+      "start": 18.5,
+      "end": 19.0
     },
     {
-      "time_range": "2pm",
-      "name": "Hacking Begins, Lunch",
-      "location": "Glycofi Atrium",
-      "color": "#B2D96D",
-      "start": 14.0,
-      "end": 14.5
-    },
-    {
-      "time_range": "2:30pm",
-      "name": "Workshop: Thayer School - Sensors and Actuators on Arduino and Pi",
-      "location": "Couch Lab",
-      "color": "#E6F176",
-      "start": 14.5,
-      "end": 15.5
-    },
-    {
-      "time_range": "3:30pm",
-      "name": "Workshop: Intralinks - Introduction to APIs",
-      "location": "C100 Spanos Auditorium",
-      "color": "#E6F176",
-      "start": 15.5,
-      "end": 16
-    },
-    {
-      "time_range": "4:00pm",
-      "name": "Workshop: WebDev - Introduction to HTML/CSS with Bootstrap",
-      "location": "MB01 Zaleski Auditorium",
-      "color": "#E6F176",
-      "start": 16,
-      "end": 16.5
-    },
-    {
-      "time_range": "4:30pm",
-      "name": "Workshop: Appian - ReactJS",
-      "location": "C100 Spanos Auditorium",
-      "color": "#E6F176",
-      "start": 16.5,
-      "end": 17
-    },
-    {
-      "time_range": "7pm-8pm",
-      "name": "Dinner",
-      "location": "Glycofi Atrium",
+      "time_range": "7:00pm-8:00pm",
+      "name": "DALI Virtual Reality Workshop",
+      "location": "Collis 101",
       "color": "#B2D96D",
       "start": 19.0,
-      "end": 20.0
-    }
+      "end": 20
+    },
   ]
 });
 
 PineSchedule.load(".day-2", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "SUNDAY",
-  "month": "SEPTEMBER",
-  "day": 25,
+  "day_of_week": "SATURDAY",
+  "month": "APRIL",
+  "day": 8,
   "range": {
     "start": PINE_SCHEDULE.DAY_2_START,
     "end": PINE_SCHEDULE.DAY_2_START + PINE_SCHEDULE.HOURS_TO_SHOW
   },
   "events": [
   {
-      "time_range": "8am",
-      "name": "Breakfast",
-      "location": "Glycofi Atrium",
-      "color": "#B2D96D",
-      "start": 8.0,
-      "end":10.0
+      "time_range": "9am",
+      "name": "Registration and Breakfast",
+      "location": "Sarner Underground",
+      "color": "#E6F176",
+      "start": 9.0,
+      "end":10.5
     },
     {
-      "time_range": "12pm-1pm",
+      "time_range": "",
+      "name": "Hacking",
+      "location": "Sarner Underground",
+      "color": "#D7766B",
+      "start": 10.5,
+      "end": 12.5
+    },
+    {
+      "time_range": "12pm-1:30pm",
       "name": "Lunch",
-      "location": "Glycofi Atrium",
+      "location": "Sarner Underground",
       "color": "#B2D96D",
       "start": 12.0,
-      "end": 13.0
+      "end": 13.5
     },
     {
-      "time_range": "2pm-3:30pm",
-      "name": "Demos + First-Round Judging",
-      "location": "Glycofi Atrium",
+      "time_range": "",
+      "name": "Hacking",
+      "location": "Sarner Underground",
       "color": "#D7766B",
-      "start": 14.0,
-      "end": 15.5
+      "start": 13.5,
+      "end": 18.0
+    },
+    {
+      "time_range": "6pm-7:30pm",
+      "name": "Dinner",
+      "location": "Sarner Underground",
+      "color": "#E6F176",
+      "start": 18.0,
+      "end": 19.5
+    },
+    {
+      "time_range": "",
+      "name": "Hacking",
+      "location": "Sarner Underground",
+      "color": "#D7766B",
+      "start": 19.5,
+      "end": 21.0
     },
     {
 
-      "time_range": "3:30pm-4:30pm",
-      "name": "Closing Ceremony",
-      "location": "Cook Auditorium",
+      "time_range": "9:00pm-10:00pm",
+      "name": "Judging and Awards",
+      "location": "Sarner Underground",
       "color": "#8BB9B6",
-      "start": 15.5,
-      "end": 16.5
+      "start": 21.0,
+      "end": 22.0
     }
   ]
 });
@@ -186,7 +170,7 @@ function jumpToSection(event, targetSection){
 
 $(document).ready(function(){
 
-  $('#schedule').hide();
+  //$('#schedule').hide();
   //$('#apply').hide();
 
   var faqHeight = $('#faq').height();
