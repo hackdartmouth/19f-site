@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>HackDay II</title>
+        <title>HackDartmouth IV</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -13,14 +13,14 @@
         <link rel="stylesheet" href="css/main.css">
 
         <!-- for Facebook -->
-        <meta property="og:title" content="HackDay II"/>
+        <meta property="og:title" content="HackDartmouth IV"/>
         <meta property="og:type" content="website"/>
         <meta property="og:image" content="http://hackdartmouth.io/img/header-fb.png"/>
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="630"/>
         <meta property="og:image:type" content="image/png"/>
         <meta property="og:url" content="http://hackdartmouth.io"/>
-        <meta property="og:description" content="Register now for HackDay II, April 8th."/>
+        <meta property="og:description" content="Register now for HackDartmouth IV, April 7-8th."/>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -35,8 +35,8 @@
               <div id="lol"><img id="lol-img" onclick="hehehe()" src="img/lol.gif"></div>
             <div class="col-md-12 text-center">
               <div id="welcome-block">
-                <h1 id="welcome-title">HACKDAY II</h1>
-                <h4 id="date">April 8th, 2017</h4><h4>Dartmouth College</h4>
+                <h1 id="welcome-title">HACKDARTMOUTH IV</h1>
+                <h4 id="date">April 7-8th, 2017</h4><h4>Dartmouth College</h4>
               </div>
             </div>
           </div>
@@ -56,10 +56,10 @@
               <div id="can-collapse" class="collapse navbar-collapse navbar-collapsible-menu">
                 <ul class="nav nav-justified">
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#">ABOUT</a></div></li>
-                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>
+                  <!--<li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>-->
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div></li>
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div></li>
-                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s5" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">REGISTER</a></div></li>
+                  <!--<li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s5" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">REGISTER</a></div></li>-->
                 </ul>
               </div>
             </div>
@@ -81,9 +81,10 @@
                   <img src="img/keyboard.png" class="about-image" style="margin-left: 10%">
                 </div>
                 <div class="main-text">
-                  <p class="main-text">After three hackathons and our inaugural HackDay, we’re excited to bring back HackDay for its second iteration! We had a blast at last spring’s event - with over eighty participants, two student-run workshops, and awesome prizes, HackDay II is coming back bigger and stronger.</p>
-                  <p class="main-text">For those of you who don’t know, HackDay is a 12-hour learning-based, beginner focused event. It’s a great way to get a taste of our traditional 24-hour hackathon, as well as gain new skills as a beginner developer! We’re dividing the prizes into beginner and intermediate levels, so everyone has a chance to win something! We’re also excited to announce our partnership this year with Google. They’ll be bringing mentors and hosting workshops and are just as stoked to innovate, learn, and create with you!</p>
-                  <p class="main-text">What are you waiting for? Mark your calendars for April 8th, 2017 and<a href="https://hackday2016.devpost.com/submissions"> check out some of the projects from our first HackDay!</a></p>
+                  <p class="main-text">We’ve really come a long way since our first hackathon. After three iterations of HackDartmouth and our inaugural HackDay last spring, we’re more excited than ever to innovate this year!</p>
+                  <p class="main-text">This spring, HackDartmouth IV will again combine experiential learning with friendly competition. With company-sponsored workshops and the chance to develop and refine skills, we’re bringing hundreds of students from across the nation to learn, hack, and create for a weekend.</p>
+                  <p class="main-text">The day of the event features twenty-four hours of coding, swag, and amazing prizes! Mark your calendars for April 7-8, 2018 and
+                  <a href="https://hackdartmouth3.devpost.com/submissions"> check out some of the projects from our past hackathons in the meantime!</a></p>
                   <!--<p class="main-text"><a href="http://hackday.devpost.com/">Here is a link to our devpost.</a></p>-->
                 </div>
               </div>
@@ -91,7 +92,7 @@
           </div>
           <br />
           <!-- Schedule -->
-          <div id="schedule" class="row">
+          <div id="schedule" class="row" hidden>
             <div class="col-md-12">
               <div class="section-header row text-center">
                 <div class="col-md-12">
@@ -138,10 +139,10 @@
                   <div class="row">
                     <div class="col-md-4 faq-block">
                       <div class="question">
-                        <span class="keyword">func</span> <span class="function">what_is_a_hackday</span>(<span class="params"></span>) {
+                        <span class="keyword">func</span> <span class="function">what_is_a_hackdartmouth</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>Hackday
+                        <p>HackDartmouth
                             is an event in which groups of hackers divided into teams develop a product. Programmers get together to build something from scratch, be it a website, app, or some other product of their imagination. There will be lots of food and prizes, and opportunities for beginners to learn!</p>
                       </div>
                       <span class="closing-brace">}</span>
@@ -267,7 +268,7 @@
                 </div>
               </div>
               <br />
-              <h4>Thank you to our current sponsor Google!</h4>
+              <h4>Thank you to our past sponsor Google!</h4>
               <div class="row">
                 <div class="tree"><a target="_blank" href="https://www.google.com/"><img src="img/google.png" alt="Google"></a></div>
               </div>
@@ -286,7 +287,7 @@
             </div>
           </div>
           <!-- Apply -->
-          <div id="apply" class="row">
+          <div id="apply" class="row" hidden>
             <div class="col-md-12 text-center">
               <div class="section-header row">
                 <div class="col-md-12">
