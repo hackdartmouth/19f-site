@@ -224,7 +224,7 @@ body {
 }
 
 #apply {
-    height: 80vh;
+    height: 100%;
     color: white;
     background-color: #99CACD;
 }
