@@ -200,13 +200,13 @@ function jumpToSection(event, targetSection){
     case "s3":
       controlString = "#faq";
       break;
-    case "s3.5":
+    case "s4":
       controlString = "#tracks";
       break;
-    case "s4":
+    case "s5":
       controlString = "#sponsors";
       break;
-    case "s5":
+    case "s6":
       controlString = "#apply";
       break;
     default:
@@ -243,6 +243,7 @@ $(document).ready(function(){
   }
 
   function refreshNavBar() {
+  	console.log("refreshed Navbar");
     scrollPosition = $(window).scrollTop()
     if(scrollPosition >= $('#welcome').height()) {
       placeholderNavBar.css('display', 'block');
@@ -259,7 +260,11 @@ $(document).ready(function(){
       $(".apply.nav-button").addClass('active')
     } else if (scrollPosition >= $("#sponsors").offset().top) {
       $(".sponsors.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#faq').offset().top) {
+    } else if (scrollPosition >= $('#tracks').offset().top) {
+    	console.log("made tracks active");
+      $(".tracks.nav-button").addClass('active')
+    }else if (scrollPosition >= $('#faq').offset().top) {
+    	console.log("made faq active");
       $(".faq.nav-button").addClass('active')
     } else if (scrollPosition >= $('#schedule').offset().top) {
       $(".schedule.nav-button").addClass('active')
