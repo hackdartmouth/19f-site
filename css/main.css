@@ -361,6 +361,11 @@ body {
   color: #72B9BC;
 }
 
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
 /* ---------------------- DO NOT EDIT BELOW THIS LINE ---------------------- */
 /*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
 
