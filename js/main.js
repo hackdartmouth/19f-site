@@ -4,9 +4,9 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_1_START: 5.5,
+  DAY_1_START: 6,
   DAY_2_START: 7,
-  HOURS_TO_SHOW: 19.5,
+  HOURS_TO_SHOW: 19,
 };
 
 
@@ -21,17 +21,17 @@ PineSchedule.load(".day-1", {
   },
   "events": [
     {
-      "time_range": "5:30am",
+      "time_range": "6am",
       "name": "New York bus departs",
-      "location": "TBD",
+      "location": "150 E 42nd Street, New York, NY 10017",
       "color": "#CADD74",
-      "start": 5.5,
-      "end": 6
+      "start": 6,
+      "end": 6.5
     },
     {
       "time_range": "8am",
       "name": "Boston bus departs",
-      "location": "TBD",
+      "location": "South Station - 700 Atlantic Avenue #2, Boston, MA, 02110",
       "color": "#689540",
       "start": 8,
       "end": 8.5
@@ -39,7 +39,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "9am-11am",
       "name": "Check-in",
-      "location": "Sponsors: Glycofi Atrium; Participants: TBD",
+      "location": "Sponsors: Glycofi Atrium; Participants: Cook Auditorium",
       "color": "#C7DF73",
       "start": 9,
       "end": 11
@@ -47,7 +47,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "11am-11:30am",
       "name": "Opening Ceremony",
-      "location": "TBD",
+      "location": "Cook Auditorium",
       "color": "#74A39B",
       "start": 11,
       "end": 11.5
@@ -55,7 +55,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "11:30am-12pm",
       "name": "Team Formation",
-      "location": "TBD",
+      "location": "Cook Auditorium",
       "color": "#CADD74",
       "start": 11.5,
       "end": 12
@@ -85,11 +85,11 @@ PineSchedule.load(".day-1", {
       "end": 19
     },
     {
-      "time_range": "11:30pm-12am",
+      "time_range": "11pm-12am",
       "name": "D-style Performance; Raffle",
       "location": "Cummings Great Hall",
       "color": "#689540",
-      "start": 23.5,
+      "start": 23,
       "end": 24
     },
     {
@@ -132,7 +132,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "12pm",
       "name": "Submissions due",
-      "location": "TBD",
+      "location": "Glycofi Atrium",
       "color": "#74A39B",
       "start": 12,
       "end": 12.5
@@ -148,7 +148,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "2pm-3pm",
       "name": "Closing Ceremony",
-      "location": "TBD",
+      "location": "Cook Auditorium ",
       "color": "#689540",
       "start": 14,
       "end": 15
