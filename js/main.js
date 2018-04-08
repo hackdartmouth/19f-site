@@ -178,7 +178,7 @@ PineSchedule.load(".day-2", {
   "day": 15,
   "range": {
     "start": PINE_SCHEDULE.DAY_2_START,
-    "end": PINE_SCHEDULE.DAY_2_START + 11
+    "end": PINE_SCHEDULE.DAY_2_START + 9.5
   },
   "events": [
     {
