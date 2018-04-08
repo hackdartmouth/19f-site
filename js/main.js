@@ -6,7 +6,10 @@ PINE_SCHEDULE = {
   },
   DAY_1_START: 6,
   DAY_2_START: 7,
+  WORKSHOPS_START: 13,
+  WORKSHOPS_HOURS: 7,
   HOURS_TO_SHOW: 19,
+
 };
 
 
@@ -62,7 +65,7 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "12pm",
-      "name": "Hacking Begins; Lunch",
+      "name": "Hacking Begins; Lunch (sponsored by Facebook)",
       "location": "Glycofi Atrium",
       "color": "#689540",
       "start": 12,
@@ -86,7 +89,7 @@ PineSchedule.load(".day-1", {
     },
     {
       "time_range": "11pm-12am",
-      "name": "D-style Performance; Raffle",
+      "name": "Sings Performance; Raffle",
       "location": "Cummings Great Hall",
       "color": "#689540",
       "start": 23,
@@ -103,6 +106,71 @@ PineSchedule.load(".day-1", {
   ]
 });
 
+
+
+PineSchedule.load(".day-0", {
+  "optionals": PINE_SCHEDULE.OPTIONALS,
+  "day_of_week": "WORKSHOPS: SATURDAY",
+  "month": "APRIL",
+  "day": 14,
+  "range": {
+    "start": PINE_SCHEDULE.WORKSHOPS_START,
+    "end": PINE_SCHEDULE.WORKSHOPS_START + PINE_SCHEDULE.WORKSHOPS_HOURS
+  },
+  "events": [
+    {
+      "time_range": "1pm-2pm",
+      "name": "Intralinks: Intro to API",
+      "location": "Zaleski Auditorium",
+      "color": "#689540",
+      "start": 13,
+      "end": 14
+    },
+    {
+      "time_range": "2pm-2:30pm",
+      "name": "Wayfair: Intro to React",
+      "location": "Spanos Auditorium",
+      "color": "#C7DF73",
+      "start": 14,
+      "end": 14.5
+    },
+    {
+      "time_range": "2:30pm-4pm",
+      "name": "Appian: React Native; Intro to Web Dev with HTML/CSS",
+      "location": "Zaleski Auditorium; Spanos Auditorium",
+      "color": "#CADD74",
+      "start": 14.5,
+      "end": 16
+    },
+    {
+      "time_range": "4pm-5:30pm",
+      "name": "Amazon Alexa",
+      "location": "Spanos Auditorium",
+      "color": "#689540",
+      "start": 16,
+      "end": 17.5
+    },
+    {
+      "time_range": "5:30pm-6pm",
+      "name": "Ionic Security: Securing Your App's Data",
+      "location": "Zaleski Auditorium",
+      "color": "#74A39B",
+      "start": 17.5,
+      "end": 18
+    },
+    {
+      "time_range": "7pm-8pm",
+      "name": "Facebook: Technical Interviews and Resumes",
+      "location": "Zaleski Auditorium",
+      "color": "#CADD74",
+      "start": 19,
+      "end": 20
+    },
+  ]
+});
+
+
+
 PineSchedule.load(".day-2", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
   "day_of_week": "SUNDAY",
@@ -110,7 +178,7 @@ PineSchedule.load(".day-2", {
   "day": 15,
   "range": {
     "start": PINE_SCHEDULE.DAY_2_START,
-    "end": PINE_SCHEDULE.DAY_2_START + PINE_SCHEDULE.HOURS_TO_SHOW
+    "end": PINE_SCHEDULE.DAY_2_START + 11
   },
   "events": [
     {
@@ -123,7 +191,7 @@ PineSchedule.load(".day-2", {
     },
     {
       "time_range": "11am",
-      "name": "Lunch",
+      "name": "Lunch (sponsored by Intralinks)",
       "location": "Glycofi Atrium",
       "color": "#C7DF73",
       "start": 11,
@@ -163,7 +231,6 @@ PineSchedule.load(".day-2", {
     },
   ]
 });
-
 
 var playing = false;
 var nyanCat = new Audio("misc/nyancat.mp3");
