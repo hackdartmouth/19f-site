@@ -88,6 +88,22 @@ PineSchedule.load(".day-1", {
       "end": 19
     },
     {
+      "time_range": "7pm-8pm",
+      "name": "Workshops",
+      "location": "Couch Lab; Spanos Auditorium",
+      "color": "#74A39B",
+      "start": 19,
+      "end": 20
+    },
+    {
+      "time_range": "8pm",
+      "name": "Ben & Jerry's Ice Cream Cart",
+      "location": "",
+      "color": "#689540",
+      "start": 20,
+      "end": 21
+    },
+    {
       "time_range": "11pm-12am",
       "name": "Sings Performance; Raffle",
       "location": "Cummings Great Hall",
@@ -138,16 +154,24 @@ PineSchedule.load(".day-0", {
       "time_range": "2:30pm-4pm",
       "name": "Appian: React Native; Intro to Web Dev with HTML/CSS",
       "location": "Zaleski Auditorium; Spanos Auditorium",
-      "color": "#CADD74",
+      "color": "#74A39B",
       "start": 14.5,
       "end": 16
     },
     {
-      "time_range": "4pm-5:30pm",
+      "time_range": "4pm-5pm",
       "name": "Amazon Alexa",
       "location": "Spanos Auditorium",
       "color": "#689540",
       "start": 16,
+      "end": 17
+    },
+    {
+      "time_range": "5pm-5:30pm",
+      "name": "Amulet App Development",
+      "location": "Couch Lab",
+      "color": "#C7DF73",
+      "start": 17,
       "end": 17.5
     },
     {
