@@ -42,7 +42,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "9am-11am",
       "name": "Check-in",
-      "location": "Sponsors: Glycofi Atrium; Participants: Cook Auditorium",
+      "location": "Sponsors: Glycofi Atrium; Participants: Glycofi Atrium",
       "color": "#C7DF73",
       "start": 9,
       "end": 11
@@ -50,7 +50,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "11am-11:30am",
       "name": "Opening Ceremony",
-      "location": "Cook Auditorium",
+      "location": "Zaleski Auditorium",
       "color": "#74A39B",
       "start": 11,
       "end": 11.5
@@ -58,7 +58,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "11:30am-12pm",
       "name": "Team Formation",
-      "location": "Cook Auditorium",
+      "location": "Zaleski Auditorium",
       "color": "#CADD74",
       "start": 11.5,
       "end": 12
@@ -74,7 +74,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "1pm-6pm",
       "name": "Workshops",
-      "location": "Couch Lab; Spanos Auditorium",
+      "location": "Couch Lab; Spanos Auditorium; Zaleski Auditorium",
       "color": "#74A39B",
       "start": 13,
       "end": 18
@@ -90,7 +90,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "7pm-8pm",
       "name": "Workshops",
-      "location": "Couch Lab; Spanos Auditorium",
+      "location": "Couch Lab; Spanos Auditorium; Zaleski Auditorium",
       "color": "#74A39B",
       "start": 19,
       "end": 20
@@ -208,7 +208,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "7am",
       "name": "Breakfast",
-      "location": "Glycofi",
+      "location": "Glycofi Atrium",
       "color": "#689540",
       "start": 7,
       "end": 8
@@ -240,7 +240,7 @@ PineSchedule.load(".day-2", {
     {
       "time_range": "2pm-3pm",
       "name": "Closing Ceremony",
-      "location": "Cook Auditorium ",
+      "location": "Zaleski Auditorium",
       "color": "#689540",
       "start": 14,
       "end": 15
