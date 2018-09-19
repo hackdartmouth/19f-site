@@ -347,9 +347,7 @@ $(document).ready(function(){
     scrollPosition = scrollPosition + $(window).height() / 10 + 80
 
     $(".active").removeClass('active')
-    if (scrollPosition >= $("#apply").offset().top) {
-      $(".apply.nav-button").addClass('active')
-    } else if (scrollPosition >= $("#sponsors").offset().top) {
+    if (scrollPosition >= $("#sponsors").offset().top) {
       $(".sponsors.nav-button").addClass('active')
     } else if (scrollPosition >= $('#tracks').offset().top) {
     	console.log("made tracks active");
@@ -357,8 +355,6 @@ $(document).ready(function(){
     }else if (scrollPosition >= $('#faq').offset().top) {
     	console.log("made faq active");
       $(".faq.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#schedule').offset().top) {
-      $(".schedule.nav-button").addClass('active')
     } else if (scrollPosition >= $('#about').offset().top) {
       $(".about.nav-button").addClass('active')
     }
