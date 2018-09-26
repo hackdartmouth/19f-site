@@ -4,121 +4,62 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_1_START: 6,
-  DAY_2_START: 7,
-  WORKSHOPS_START: 13,
-  WORKSHOPS_HOURS: 7,
-  HOURS_TO_SHOW: 19,
+  DAY_0_START: 8,
+  HOURS_TO_SHOW: 14,
 
 };
 
 
-PineSchedule.load(".day-1", {
+PineSchedule.load(".day-0", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
   "day_of_week": "SATURDAY",
-  "month": "APRIL",
-  "day": 14,
+  "month": "OCTOBER",
+  "day": 6,
   "range": {
-    "start": PINE_SCHEDULE.DAY_1_START,
-    "end": PINE_SCHEDULE.DAY_1_START + PINE_SCHEDULE.HOURS_TO_SHOW
+    "start": PINE_SCHEDULE.DAY_0_START,
+    "end": PINE_SCHEDULE.DAY_0_START + PINE_SCHEDULE.HOURS_TO_SHOW
   },
   "events": [
     {
-      "time_range": "6am",
-      "name": "New York bus departs",
-      "location": "150 E 42nd Street, New York, NY 10017",
-      "color": "#CADD74",
-      "start": 6,
-      "end": 6.5
-    },
-    {
       "time_range": "8am",
-      "name": "Boston bus departs",
-      "location": "South Station - 700 Atlantic Avenue #2, Boston, MA, 02110",
-      "color": "#689540",
+      "name": "Registration",
+      "location": "",
+      "color": "#CADD74",
       "start": 8,
       "end": 8.5
     },
     {
-      "time_range": "9am-11am",
-      "name": "Check-in",
-      "location": "Sponsors: Glycofi Atrium; Participants: Glycofi Atrium",
-      "color": "#C7DF73",
-      "start": 9,
-      "end": 11
-    },
-    {
-      "time_range": "11am-11:30am",
-      "name": "Opening Ceremony",
-      "location": "Zaleski Auditorium",
-      "color": "#74A39B",
-      "start": 11,
-      "end": 11.5
-    },
-    {
-      "time_range": "11:30am-12pm",
-      "name": "Team Formation",
-      "location": "Zaleski Auditorium",
-      "color": "#CADD74",
-      "start": 11.5,
-      "end": 12
-    },
-    {
-      "time_range": "12pm",
-      "name": "Hacking Begins; Lunch (sponsored by Facebook)",
-      "location": "Glycofi Atrium",
+      "time_range": "8:30am-7pm",
+      "name": "HackDay",
+      "location": "",
       "color": "#689540",
-      "start": 12,
-      "end": 13
-    },
-    {
-      "time_range": "1pm-6pm",
-      "name": "Workshops",
-      "location": "Couch Lab; Spanos Auditorium; Zaleski Auditorium",
-      "color": "#74A39B",
-      "start": 13,
-      "end": 18
-    },
-    {
-      "time_range": "6pm",
-      "name": "Dinner",
-      "location": "Glycofi Atrium",
-      "color": "#C7DF73",
-      "start": 18,
+      "start": 8.5,
       "end": 19
     },
     {
-      "time_range": "7pm-8pm",
-      "name": "Workshops",
-      "location": "Couch Lab; Spanos Auditorium; Zaleski Auditorium",
-      "color": "#74A39B",
+      "time_range": "TBD",
+      "name": "Alexa workshop",
+      "location": "",
+      "color": "#C7DF73",
       "start": 19,
       "end": 20
     },
     {
-      "time_range": "8pm",
-      "name": "Ben & Jerry's Ice Cream Cart",
+      "time_range": "8pm-9pm",
+      "name": "Pitches and Judging",
       "location": "",
-      "color": "#689540",
+      "color": "#74A39B",
       "start": 20,
       "end": 21
     },
     {
-      "time_range": "11pm-12am",
-      "name": "Sings Performance; Raffle",
-      "location": "Cummings Great Hall",
-      "color": "#689540",
-      "start": 23,
-      "end": 24
-    },
-    {
-      "time_range": "12am-1am",
-      "name": "Midnight Actvity",
-      "location": "Glycofi Atrium",
+      "time_range": "9pm-10pm",
+      "name": "Prizes",
+      "location": "",
       "color": "#CADD74",
-      "start": 24,
-      "end": 25
-    },
+      "start": 21,
+      "end": 22
+    }
   ]
 });
 
@@ -219,9 +160,12 @@ $(document).ready(function(){
     } else if (scrollPosition >= $('#tracks').offset().top) {
     	console.log("made tracks active");
       $(".tracks.nav-button").addClass('active')
-    }else if (scrollPosition >= $('#faq').offset().top) {
+    } else if (scrollPosition >= $('#faq').offset().top) {
     	console.log("made faq active");
       $(".faq.nav-button").addClass('active')
+    } else if (scrollPosition >= $('#schedule').offset().top) {
+      console.log("made schedule active");
+      $(".schedule.nav-button").addClass('active')
     } else if (scrollPosition >= $('#about').offset().top) {
       $(".about.nav-button").addClass('active')
     }
