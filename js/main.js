@@ -4,20 +4,41 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_0_START: 8,
+  DAY_0_START: 18,
+  DAY_1_START: 8,
   HOURS_TO_SHOW: 14,
 
 };
 
-
 PineSchedule.load(".day-0", {
+  "optionals": PINE_SCHEDULE.OPTIONALS,
+  "day_of_week": "FRIDAY",
+  "month": "OCTOBER",
+  "day": 5,
+  "range": {
+    "start": PINE_SCHEDULE.DAY_0_START,
+    "end": PINE_SCHEDULE.DAY_0_START + 1.5
+  },
+  "events": [
+    {
+      "time_range": "~6pm",
+      "name": "Alexa Workshop",
+      "location": "TBD",
+      "color": "#CADD74",
+      "start": 18,
+      "end": 19.5
+    }
+  ]
+});
+
+PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
   "day_of_week": "SATURDAY",
   "month": "OCTOBER",
   "day": 6,
   "range": {
-    "start": PINE_SCHEDULE.DAY_0_START,
-    "end": PINE_SCHEDULE.DAY_0_START + PINE_SCHEDULE.HOURS_TO_SHOW
+    "start": PINE_SCHEDULE.DAY_1_START,
+    "end": PINE_SCHEDULE.DAY_1_START + PINE_SCHEDULE.HOURS_TO_SHOW
   },
   "events": [
     {
@@ -29,19 +50,11 @@ PineSchedule.load(".day-0", {
       "end": 8.5
     },
     {
-      "time_range": "8:30am-7pm",
+      "time_range": "8:30am-8pm",
       "name": "HackDay",
       "location": "",
       "color": "#689540",
       "start": 8.5,
-      "end": 19
-    },
-    {
-      "time_range": "TBD",
-      "name": "Alexa workshop",
-      "location": "",
-      "color": "#C7DF73",
-      "start": 19,
       "end": 20
     },
     {
