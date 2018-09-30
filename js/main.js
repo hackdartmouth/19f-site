@@ -168,7 +168,9 @@ $(document).ready(function(){
     scrollPosition = scrollPosition + $(window).height() / 10 + 80
 
     $(".active").removeClass('active')
-    if (scrollPosition >= $("#sponsors").offset().top) {
+    if (scrollPosition >= $("#apply").offset().top) {
+      $(".apply.nav-button").addClass('active')
+    } else if (scrollPosition >= $("#sponsors").offset().top) {
       $(".sponsors.nav-button").addClass('active')
     } else if (scrollPosition >= $('#tracks').offset().top) {
     	console.log("made tracks active");
