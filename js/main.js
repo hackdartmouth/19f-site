@@ -23,7 +23,7 @@ PineSchedule.load(".day-0", {
     {
       "time_range": "~6pm",
       "name": "Alexa Workshop",
-      "location": "TBD",
+      "location": "DEN",
       "color": "#CADD74",
       "start": 18,
       "end": 19.5
@@ -50,11 +50,27 @@ PineSchedule.load(".day-1", {
       "end": 8.5
     },
     {
-      "time_range": "8:30am-8pm",
+      "time_range": "8:30am-3:50pm",
       "name": "HackDay",
       "location": "",
       "color": "#689540",
       "start": 8.5,
+      "end": 15.8
+    },
+    {
+      "time_range": "3:50-4:15pm",
+      "name": "Pitch Workshop by Jonathan Baer of Threshold Ventures",
+      "location": "",
+      "color": "#CADD74",
+      "start": 16,
+      "end": 16.5
+    },
+    {
+      "time_range": "4:15-8pm",
+      "name": "HackDay",
+      "location": "",
+      "color": "#689540",
+      "start": 16.5,
       "end": 20
     },
     {
