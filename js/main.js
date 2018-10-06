@@ -66,12 +66,28 @@ PineSchedule.load(".day-1", {
       "end": 16.5
     },
     {
-      "time_range": "4:15-8pm",
+      "time_range": "4:15-5pm",
       "name": "HackDay",
       "location": "",
       "color": "#689540",
       "start": 16.5,
-      "end": 20
+      "end": 17,
+    },
+    {
+      "time_range": "5-6pm",
+      "name": "WebDev Workshop",
+      "location": "",
+      "color": "#CADD74",
+      "start": 17,
+      "end": 18
+    },
+    {
+      "time_range": "6-8pm",
+      "name": "HackDay",
+      "location": "",
+      "color": "#689540",
+      "start": 18,
+      "end": 20,
     },
     {
       "time_range": "8pm-9pm",
