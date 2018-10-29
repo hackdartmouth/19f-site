@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>HackDay III</title>
+        <title>HackDartmouth V</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -38,8 +38,9 @@
               <div id="lol"><img id="lol-img" onclick="hehehe()" src="img/lol.gif"></div>
             <div class="col-md-12 text-center">
               <div id="welcome-block">
-                <h1 id="welcome-title">HACKDAY III</h1>
-                <h4 id="date">Oct 5-6, 2018</h4><h4>Magnuson Center for Entrepreneurship</h4>
+                <h1 id="welcome-title">HackDartmouth V</h1>
+                <h4 id="date">April 6-7, 2019</h4>
+                <h4>Thayer School of Engineering</h4>
                 <!--<h5> Interested in being a HackDartmouth Organizer? Sign up <a href="https://goo.gl/forms/fi2CEjMzJqv9Gi8K2">here!</a></h5>-->
 
               </div>
@@ -61,11 +62,13 @@
               <div id="can-collapse" class="collapse navbar-collapse navbar-collapsible-menu">
                 <ul class="nav nav-justified">
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#">ABOUT</a></div></li>
-                  
-                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>
-                 
+                  <!--
+                  <li hidden><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>
+                 -->
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div></li>
+                  <!--
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s4" class="tracks nav-button" onclick="jumpToSection(event, this.id)" href="#">TRACKS</a></div></li>
+                  -->
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s5" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div></li>
                   
                   <li ><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s6" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">REGISTER</a></div></li>
@@ -93,14 +96,14 @@
                 <div class="main-text">
 
                   </p>
-                  <p class="main-text">After three hackathons and two HackDays, we’re excited to bring back HackDay for its third iteration! We had a blast at last fall’s event - with over eighty participants, two student-run workshops, and awesome prizes, HackDay III is coming back bigger and stronger.
+                  <p class="main-text">We’ve really come a long way since our first hackathon. After four iterations of HackDartmouth and three HackDays, we’re more excited than ever to innovate this year for our FIFTH HackDartmouth! 
                   </p>
                   <p class="main-text">
-				  HackDay is a 12-hour learning-based, beginner focused event. It’s a great way to get a taste of our traditional 24-hour hackathon, as well as gain new skills as a beginner developer! We’re dividing the prizes into beginner and intermediate levels, so everyone has a chance to win something! We’re also excited to announce our partnership this year with the Magnuson Center for Entrepreneurship. They’ll be bringing mentors and prizes (Amazon Alexa Grant!) and are just as stoked to innovate, learn, and create with you!
-				  </p>
-				  <p class="main-text">
-				  What are you waiting for? Mark your calendars for Oct 5-6, 2016! 
-				  </p>
+        				  Last year, we had our biggest hackathon to date, with ~250 people and 45 projects! This spring, HackDartmouth V will again combine experiential learning with friendly competition. With company-sponsored workshops, mentors, and the chance to develop and refine skills, we’re bringing hundreds of students from across the nation to learn, hack, and create for a weekend. 
+        				  </p>
+        				  <p class="main-text">
+        				  The day of the event features twenty-four hours of coding, swag, and amazing prizes! Mark your calendars for April 6-7, 2019 and check out some of the projects from our past hackathons in the meantime!
+        				  </p>
 
                   <!--<p class="main-text"><a href="http://hackday.devpost.com/">Here is a link to our devpost.</a></p>-->
                 </div>
@@ -109,7 +112,7 @@
           </div>
           <br />
           <!-- Schedule -->
-          <div id="schedule" class="row">
+          <div id="schedule" class="row" hidden>
             <div class="col-md-12">
               <div class="section-header row text-center">
                 <div class="col-md-12">
@@ -156,7 +159,7 @@
                         <span class="keyword">func</span> <span class="function">what_is_a_hackathon</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>A hackathon is an event in which groups of hackers divided into teams develop a product. Hundreds of programmers get together to build something from scratch, be it a website, app, or some other product of their imagination. There will be lots of free food and prizes, as well as opportunities to work with representatives from various companies.</p>
+                        <p>A hackathon is an event in which groups of hackers divided into teams develop a product. Hundreds of programmers get together to build something from scratch, be it a website, app, or some other product of their imagination. There will be lots of food and prizes, and opportunities to work with representatives from various companies.</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -165,7 +168,7 @@
                         <span class="keyword">func</span> <span class="function">who_can_attend</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>Any university student (undergraduate or graduate) is welcome to participate! We also admit high school students with parental permission. Anyone and everyone is welcome to come and see what participants are working on, though, so feel free to swing by.</p>
+                        <p>Any university student (graduate or undergraduate) is welcome to participate! We also admit high school students with parental permission. Anyone and everyone is welcome to come and see what participants are working on, though, so feel free to swing by. </p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -174,7 +177,7 @@
                         <span class="keyword">func</span> <span class="function">ok_if_no_experience</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>That's completely fine! You'll have plenty of opportunity to pick the brains of talented students around you. Furthermore, 24 hours is plenty of time to learn something new!</p>
+                        <p>That's completely fine! You'll have plenty of opportunity to join teams and learn from Dartmouth students, students from other schools, and mentors. We’ll also have workshops if you are interested in learning a particular skill. 24 hours is plenty of time to learn something new!</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -185,7 +188,7 @@
                         <span class="keyword">func</span> <span class="function">require_idea_or_team</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>Nope! Although you can sign up with teammates (just tell us in your event registration), you can also sign up as an individual, and we will help place you on a team during the event.</p>
+                        <p>Nope! Although you can sign up with teammates, you can also sign up as an individual, and we will help place you on a team.</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -194,7 +197,7 @@
                         <span class="keyword">func</span> <span class="function">what_to_build</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>You can build whatever you want: websites, programs, mobile apps, anything! All code must be written during the hackathon; however, feel free to use open source libraries and APIs.</p>
+                        <p>You can build whatever you want: websites, programs, mobile apps, anything! However, all code must be written during the hackathon - feel free to use open source libraries and APIs.</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -214,7 +217,7 @@
                         <span class="keyword">func</span> <span class="function">what_to_bring?</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>Photo ID, laptop, chargers, enthusiasm. Optional: hardware, a team, ideas.</p>
+                        <p>Laptop, cellphone, chargers, toiletries, sleeping bag (if planning to sleep at venue). Food will be provided! Please don't bring alcohol, drugs, or soldering equipment.</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -223,16 +226,16 @@
                         <span class="keyword">func</span> <span class="function">what_can_I_win</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>A panel of judges will decide on the winning hacks based on criteria of creativity, usefulness, technical difficulty, and form. The top prizes are Apple Watches, Sonos Speakers, and Philips Hue Lights.</p>
+                        <p>A panel of judges will decide on the winning hacks based on criteria of creativity, usefulness, technical difficulty, and form. The top prizes are TBA. Previous prizes have included drones, Apple watches, speakers, TVs, and other awesome tech.</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
                      <div class="col-md-4 faq-block">
                       <div class="question">
-                        <span class="keyword">func</span> <span class="function">not_a_hacker</span>(<span class="params"></span>) {
+                        <span class="keyword">func</span> <span class="function">not_a_student</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>If you are a company or professional organization, you can help us out by sponsoring the event. If you’re a student, please spread the word about this event to students, friends, and media!</p>
+                        <p>Interested in being a mentor or sponsor? Contact us at sponsors@hackdartmouth.io!</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -243,7 +246,7 @@
                         <span class="keyword">func</span> <span class="function">deadline_to_register</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>Up to the day of the event</p>
+                        <p>Non-Dartmouth students can register up to February 1, and applications will be accepted on a rolling basis. Dartmouth students may register up to the day of the event.</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -252,9 +255,7 @@
                         <span class="keyword">func</span> <span class="function">get_to_dartmouth</span>(<span class="params"></span>) {
                       </div>
                       <div class="answer">
-                        <p>We are offering a limited number of travel reimbursements for this event, provided that you are accepted to the event, participate in the event, and submit a project that demonstrates reasonable effort on devpost for judging. We reserve the right to determine what constitutes “reasonable effort,” so please, no “hello worlds.”
-                        </br>
-                        We will also be chartering buses from Boston and New York City; more details on buses will be available after registration has closed!</p>
+                        <p>We will charter buses from Boston and New York. Reimbursements for students outside these areas will be assessed by a case-by-case basis.</p>
                       </div>
                       <span class="closing-brace">}</span>
                     </div>
@@ -276,7 +277,7 @@
 
 
           <!-- Tracks -->
-          <div id="tracks" class="row">
+          <div id="tracks" class="row" hidden>
             <div class="col-md-12">
               <div class="section-header row text-center">
                 <div class="col-md-12">
@@ -379,7 +380,11 @@
               </div>
               <br />
               <div class="col-md-12">
-                <div class="typeform-widget" data-url="https://hackdartmouth.typeform.com/to/b6iHy6" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=g9EIJM&utm_source=typeform.com-195209-Pro&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+                <h4>Registration will open soon! Follow us on social media for updates: <a>https://www.facebook.com/hackDartmouth/</a></h4>
+                <br/>
+                <br/>
+                <br/>
+                <div hidden class="typeform-widget" data-url="https://hackdartmouth.typeform.com/to/b6iHy6" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=g9EIJM&utm_source=typeform.com-195209-Pro&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
 
                 </div>
             </div>

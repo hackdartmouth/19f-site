@@ -204,15 +204,9 @@ $(document).ready(function(){
       $(".apply.nav-button").addClass('active')
     } else if (scrollPosition >= $("#sponsors").offset().top) {
       $(".sponsors.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#tracks').offset().top) {
-    	console.log("made tracks active");
-      $(".tracks.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#faq').offset().top) {
+    }  else if (scrollPosition >= $('#faq').offset().top) {
     	console.log("made faq active");
       $(".faq.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#schedule').offset().top) {
-      console.log("made schedule active");
-      $(".schedule.nav-button").addClass('active')
     } else if (scrollPosition >= $('#about').offset().top) {
       $(".about.nav-button").addClass('active')
     }
