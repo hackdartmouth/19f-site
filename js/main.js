@@ -187,7 +187,7 @@ $(document).ready(function(){
   }
 
   function refreshNavBar() {
-  	console.log("refreshed Navbar");
+  	//console.log("refreshed Navbar");
     scrollPosition = $(window).scrollTop()
     if(scrollPosition >= $('#welcome').height()) {
       placeholderNavBar.css('display', 'block');
@@ -205,7 +205,7 @@ $(document).ready(function(){
     } else if (scrollPosition >= $("#sponsors").offset().top) {
       $(".sponsors.nav-button").addClass('active')
     }  else if (scrollPosition >= $('#faq').offset().top) {
-    	console.log("made faq active");
+    	//console.log("made faq active");
       $(".faq.nav-button").addClass('active')
     } else if (scrollPosition >= $('#about').offset().top) {
       $(".about.nav-button").addClass('active')
