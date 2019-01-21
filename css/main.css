@@ -225,6 +225,8 @@ body {
 
 #apply {
     height: 100%;
+    width: 100;
+    margin: 0;
     color: white;
     background-color: #99CACD;
 }
