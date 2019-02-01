@@ -52,7 +52,7 @@ body {
 }
 
 #welcome-title {
-    font-size: 8vh;
+    font-size: 7vh;
     font-weight: bold;
     color: #1d8b8e;
     margin-top: 15vh;
@@ -224,7 +224,9 @@ body {
 }
 
 #apply {
-    height: 80vh;
+    height: 100%;
+    width: 100;
+    margin: 0;
     color: white;
     background-color: #99CACD;
 }
@@ -329,6 +331,12 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+.sponsor-img{
+    width: 45%;
+}
+.ionic-img{
+    width: 35%;
+}
 
 .tree {
     padding: 1% 1% 1% 1%;
@@ -349,6 +357,15 @@ body {
 
 .partner-img {
     width: 65%;
+}
+
+.track-title {
+  color: #72B9BC;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
 }
 
 /* ---------------------- DO NOT EDIT BELOW THIS LINE ---------------------- */
