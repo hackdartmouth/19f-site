@@ -4,178 +4,110 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_1_START: 10.0,
-  DAY_2_START: 7.0,
-  HOURS_TO_SHOW: 15,
+  DAY_0_START: 18,
+  DAY_1_START: 8,
+  HOURS_TO_SHOW: 14,
+
 };
 
 PineSchedule.load(".day-0", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "FRI",
-  "month": "OCT",
-  "day": 2,
+  "day_of_week": "FRIDAY",
+  "month": "OCTOBER",
+  "day": 5,
   "range": {
-    "start": 16.0,
-    "end": 17.0
+    "start": PINE_SCHEDULE.DAY_0_START,
+    "end": PINE_SCHEDULE.DAY_0_START + 1.5
   },
   "events": [
     {
-      "time_range": "4-5pm",
-      "name": "Microsoft Workshop",
-      "location": "Maclean B01",
-      "color": "#E6F176",
-      "start": 16.0,
-      "end": 17.0
-    },
+      "time_range": "~6pm",
+      "name": "Alexa Workshop",
+      "location": "DEN",
+      "color": "#CADD74",
+      "start": 18,
+      "end": 19.5
+    }
   ]
 });
 
-
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "SAT",
-  "month": "OCT",
-  "day": 3,
+  "day_of_week": "SATURDAY",
+  "month": "OCTOBER",
+  "day": 6,
   "range": {
     "start": PINE_SCHEDULE.DAY_1_START,
     "end": PINE_SCHEDULE.DAY_1_START + PINE_SCHEDULE.HOURS_TO_SHOW
   },
   "events": [
     {
-      "time_range": "10-11am",
+      "time_range": "8am",
       "name": "Registration",
-      "location": "Filene Auditorium - Moore",
-      "color": "#8BB9B6",
-      "start": 10.0,
-      "end": 11.0
+      "location": "",
+      "color": "#CADD74",
+      "start": 8,
+      "end": 8.5
     },
     {
-      "time_range": "11am-12pm",
-      "name": "Opening Ceremony",
-      "location": "Filene Auditorium - Moore",
-      "color": "#E0CC5C",
-      "start": 11.0,
-      "end": 12.5
+      "time_range": "8:30am-3:50pm",
+      "name": "HackDay",
+      "location": "",
+      "color": "#689540",
+      "start": 8.5,
+      "end": 15.8
     },
     {
-      "time_range": "12:30-1:30pm",
-      "name": "Lunch (Moe's), Team Formation, Hacking!",
-      "location": "Haldeman",
-      "color": "#B2D96D",
-      "start": 12.5,
-      "end": 13.5
-    },
-    {
-      "time_range": "1:30-2:30pm",
-      "name": "DEN Talk: Beyond the Hack",
-      "location": "Kemeny 008",
-      "color": "#E6F176",
-      "start": 13.5,
-      "end": 14.5
-    },
-    {
-      "time_range": "2:30-3:30pm",
-      "name": "Intralinks Workshop",
-      "location": "Kemeny 008",
-      "color": "#E6F176",
-      "start": 14.5,
-      "end": 15.5
-    },
-    {
-      "time_range": "3:30-4:30pm",
-      "name": "Thayer Workshop: Hacking the Raspberry Pi",
-      "location": "Kemeny 008",
-      "color": "#E6F176",
-      "start": 15.5,
+      "time_range": "3:50-4:15pm",
+      "name": "Pitch Workshop by Jonathan Baer of Threshold Ventures",
+      "location": "",
+      "color": "#CADD74",
+      "start": 16,
       "end": 16.5
     },
     {
-      "time_range": "4:30-5pm",
-      "name": "Presenting Your Experience on Paper",
-      "location": "Kemeny 008",
-      "color": "#E6F176",
+      "time_range": "4:15-5pm",
+      "name": "HackDay",
+      "location": "",
+      "color": "#689540",
       "start": 16.5,
-      "end": 17.0
+      "end": 17,
     },
     {
-      "time_range": "7pm",
-
-      "name": "Dinner (Gas Station Chinese)",
-      "location": "Haldeman",
-      "color": "#B2D96D",
-      "start": 19.0,
-      "end": 20.0
+      "time_range": "5-6pm",
+      "name": "WebDev Workshop",
+      "location": "",
+      "color": "#CADD74",
+      "start": 17,
+      "end": 18
     },
     {
-      "time_range" : "12-1am",
-      "name": "Midnight Activity!",
-      "location": "Haldeman",
-      "color": "#D7766B",
-      "start": 24.0,
-      "end": 25.0
-    },
-  ]
-});
-
-PineSchedule.load(".day-2", {
-  "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "SUN",
-  "month": "OCT",
-  "day": 4,
-  "range": {
-    "start": PINE_SCHEDULE.DAY_2_START,
-    "end": PINE_SCHEDULE.DAY_2_START + PINE_SCHEDULE.HOURS_TO_SHOW
-  },
-  "events": [
-    {
-      "time_range": "8-9:30am",
-      "name": "Breakfast (Lou's)",
-      "location": "Haldeman",
-      "color": "#B2D96D",
-      "start": 8.0,
-      "end": 9.5
+      "time_range": "6-8pm",
+      "name": "HackDay",
+      "location": "",
+      "color": "#689540",
+      "start": 18,
+      "end": 20,
     },
     {
-      "time_range": "10am",
-      "name": "Project Submissions Due",
-      "color": "#8BB9B6",
-      "start": 10.0,
-      "end": 10.5,
+      "time_range": "8pm-9pm",
+      "name": "Pitches and Judging",
+      "location": "",
+      "color": "#74A39B",
+      "start": 20,
+      "end": 21
     },
     {
-      "time_range": "10:30am-12pm",
-      "name": "Project demos and First Round Judging",
-      "location": "Kemeny 006 and 007",
-      "color": "#8BB9B6",
-      "start": 10.5,
-      "end": 12.0,
-    },
-    {
-      "time_range": "12-1pm",
-      "name": "Lunch (Subway)",
-      "location": "Haldeman",
-      "color": "#B2D96D",
-      "start": 12.0,
-      "end": 13.0
-    },
-    {
-      "time_range": "1-3pm",
-      "name": "Closing Ceremony",
-      "location": "Filene Auditorium - Moore",
-      "color": "#E0CC5C",
-      "start": 13.0,
-      "end": 15.0
-    },
-    {
-      "time_range": "3:30pm",
-      "name": "Buses to NY and Boston depart",
-      "location": "The Hopkins Center for the Arts",
-      "color": "#BFBFBF",
-      "start": 15.5,
-      "end": 16.5
+      "time_range": "9pm-10pm",
+      "name": "Prizes",
+      "location": "",
+      "color": "#CADD74",
+      "start": 21,
+      "end": 22
     }
   ]
 });
+
 
 var playing = false;
 var nyanCat = new Audio("misc/nyancat.mp3");
@@ -213,9 +145,12 @@ function jumpToSection(event, targetSection){
       controlString = "#faq";
       break;
     case "s4":
-      controlString = "#sponsors";
+      controlString = "#tracks";
       break;
     case "s5":
+      controlString = "#sponsors";
+      break;
+    case "s6":
       controlString = "#apply";
       break;
     default:
@@ -228,6 +163,10 @@ function jumpToSection(event, targetSection){
 }
 
 $(document).ready(function(){
+
+  //$('#schedule').hide();
+  //$('#apply').hide();
+
   var faqHeight = $('#faq').height();
   var faqWidth = $('#faq').width();
   var lineHeight = $('#linecount-start').height();
@@ -248,6 +187,7 @@ $(document).ready(function(){
   }
 
   function refreshNavBar() {
+  	//console.log("refreshed Navbar");
     scrollPosition = $(window).scrollTop()
     if(scrollPosition >= $('#welcome').height()) {
       placeholderNavBar.css('display', 'block');
@@ -264,10 +204,9 @@ $(document).ready(function(){
       $(".apply.nav-button").addClass('active')
     } else if (scrollPosition >= $("#sponsors").offset().top) {
       $(".sponsors.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#faq').offset().top) {
+    }  else if (scrollPosition >= $('#faq').offset().top) {
+    	//console.log("made faq active");
       $(".faq.nav-button").addClass('active')
-    } else if (scrollPosition >= $('#schedule').offset().top) {
-      $(".schedule.nav-button").addClass('active')
     } else if (scrollPosition >= $('#about').offset().top) {
       $(".about.nav-button").addClass('active')
     }
