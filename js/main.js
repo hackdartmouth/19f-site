@@ -4,106 +4,194 @@ PINE_SCHEDULE = {
     "background_color": "#FFFFFF",
     "header_alignment": "center"
   },
-  DAY_0_START: 18,
-  DAY_1_START: 8,
-  HOURS_TO_SHOW: 14,
+  DAY_0_START: 9,
+  DAY_1_START: 0,
+  HOURS_TO_SHOW: 16.5,
 
 };
 
 PineSchedule.load(".day-0", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "FRIDAY",
-  "month": "OCTOBER",
-  "day": 5,
+  "day_of_week": "SATURDAY",
+  "month": "APRIL",
+  "day": 6,
   "range": {
     "start": PINE_SCHEDULE.DAY_0_START,
-    "end": PINE_SCHEDULE.DAY_0_START + 1.5
+    "end": PINE_SCHEDULE.DAY_0_START + 15
   },
   "events": [
     {
-      "time_range": "~6pm",
-      "name": "Alexa Workshop",
-      "location": "DEN",
-      "color": "#CADD74",
+      "time_range": "9am-11am",
+      "name": "Check-in",
+      "location": "Sponsors: Glycofi Atrium; Participants: Cook Auditorium",
+      "color": "#D7E9BB",
+      "start": 9,
+      "end": 11
+    },
+    {
+      "time_range": "11am-11:30am",
+      "name": "Opening Ceremony",
+      "location": "Cook Auditorium",
+      "color": "#91AB61",
+      "start": 11,
+      "end": 11.5
+    },
+    {
+      "time_range": "11:30am-12pm",
+      "name": "Team Formation",
+      "location": "Cook Auditorium",
+      "color": "#CEE190",
+      "start": 11.5,
+      "end": 12
+    },
+    {
+      "time_range": "12pm-1pm",
+      "name": "Hacking Begins; Lunch (sponsored by Facebook)",
+      "location": "Glycofi Atrium",
+      "color": "#D7E9BB",
+      "start": 12,
+      "end": 13
+    },
+    {
+      "time_range": "1pm-2pm",
+      "name": "Intralinks Workshop: TBD",
+      "location": "Zaleski Auditorium",
+      "color": "#91AB61",
+      "start": 13,
+      "end": 14
+    },
+    {
+      "time_range": "2pm-3pm",
+      "name": "Wayfair Workshop: TBD",
+      "location": "Zaleski Auditorium",
+      "color": "#CEE190",
+      "start": 14,
+      "end": 15
+    },
+    {
+      "time_range": "3pm-4pm",
+      "name": "Appian Workshop: React Native",
+      "location": "Zaleski Auditorium",
+      "color": "#D7E9BB",
+      "start": 15,
+      "end": 16
+    },
+    {
+      "time_range": "4pm-4:30pm",
+      "name": "Bioinformatics Workshop",
+      "location": "Zaleski Auditorium",
+      "color": "#91AB61",
+      "start": 16,
+      "end": 16.5
+    },
+    {
+      "time_range": "4:30pm-5pm",
+      "name": "Microsoft Workshop: TBD",
+      "location": "Zaleski Auditorium",
+      "color": "#CEE190",
+      "start": 16.5,
+      "end": 17
+    },
+    {
+      "time_range": "5pm-6pm",
+      "name": "Facebook Workshop: TBD",
+      "location": "Zaleski Auditorium",
+      "color": "#D7E9BB",
+      "start": 17,
+      "end": 18
+    },
+    {
+      "time_range": "6pm-7pm",
+      "name": "Dinner",
+      "location": "Glycofi Atrium",
+      "color": "#91AB61",
       "start": 18,
-      "end": 19.5
+      "end": 19
+    },
+    {
+      "time_range": "7:30pm-9pm",
+      "name": "Office Hours",
+      "location": "Couch Lab, Spanos Auditorium",
+      "color": "#CEE190",
+      "start": 19.5,
+      "end": 21
+    },
+    {
+      "time_range": "11pm-12am",
+      "name": "Raffle",
+      "location": "Cummings Great Hall",
+      "color": "#CEE190",
+      "start": 23,
+      "end": 24
     }
   ]
 });
 
 PineSchedule.load(".day-1", {
   "optionals": PINE_SCHEDULE.OPTIONALS,
-  "day_of_week": "SATURDAY",
-  "month": "OCTOBER",
-  "day": 6,
+  "day_of_week": "SUNDAY",
+  "month": "APRIL",
+  "day": 7,
   "range": {
     "start": PINE_SCHEDULE.DAY_1_START,
     "end": PINE_SCHEDULE.DAY_1_START + PINE_SCHEDULE.HOURS_TO_SHOW
   },
   "events": [
     {
-      "time_range": "8am",
-      "name": "Registration",
-      "location": "",
-      "color": "#CADD74",
-      "start": 8,
-      "end": 8.5
+      "time_range": "12am-1am",
+      "name": "Midnight Activity",
+      "location": "Glycofi Atrium",
+      "color": "#CEE190",
+      "start": 0,
+      "end": 1
     },
     {
-      "time_range": "8:30am-3:50pm",
-      "name": "HackDay",
-      "location": "",
-      "color": "#689540",
-      "start": 8.5,
-      "end": 15.8
+      "time_range": "7am-8am",
+      "name": "Breakfast",
+      "location": "Glycofi Atrium",
+      "color": "#91AB61",
+      "start": 7,
+      "end": 8
     },
     {
-      "time_range": "3:50-4:15pm",
-      "name": "Pitch Workshop by Jonathan Baer of Threshold Ventures",
-      "location": "",
-      "color": "#CADD74",
-      "start": 16,
-      "end": 16.5
+      "time_range": "11am-12pm",
+      "name": "Lunch (sponsored by Intralinks)",
+      "location": "Glycofi Atrium",
+      "color": "#D7E9BB",
+      "start": 11,
+      "end": 12
+    },
+    {
+      "time_range": "12pm-12:30pm",
+      "name": "Submissions due",
+      "location": "Glycofi Atrium",
+      "color": "#CEE190",
+      "start": 12,
+      "end": 12.5
     },
     {
       "time_range": "4:15-5pm",
-      "name": "HackDay",
-      "location": "",
-      "color": "#689540",
-      "start": 16.5,
-      "end": 17,
+      "name": "Introduce Judges, Demos, First-Round Judging",
+      "location": "Glycofi Atrium",
+      "color": "#91AB61",
+      "start": 12.5,
+      "end": 14,
     },
     {
-      "time_range": "5-6pm",
-      "name": "WebDev Workshop",
-      "location": "",
-      "color": "#CADD74",
-      "start": 17,
-      "end": 18
+      "time_range": "2pm-3pm",
+      "name": "Closing Ceremony",
+      "location": "Cook Auditorium",
+      "color": "#D7E9BB",
+      "start": 14,
+      "end": 15
     },
     {
-      "time_range": "6-8pm",
-      "name": "HackDay",
-      "location": "",
-      "color": "#689540",
-      "start": 18,
-      "end": 20,
-    },
-    {
-      "time_range": "8pm-9pm",
-      "name": "Pitches and Judging",
-      "location": "",
-      "color": "#74A39B",
-      "start": 20,
-      "end": 21
-    },
-    {
-      "time_range": "9pm-10pm",
-      "name": "Prizes",
-      "location": "",
-      "color": "#CADD74",
-      "start": 21,
-      "end": 22
+      "time_range": "4pm-4:30pm",
+      "name": "Buses depart from Hanover",
+      "location": "Hop",
+      "color": "#CEE190",
+      "start": 16,
+      "end": 16.5,
     }
   ]
 });
@@ -207,6 +295,8 @@ $(document).ready(function(){
     }  else if (scrollPosition >= $('#faq').offset().top) {
     	//console.log("made faq active");
       $(".faq.nav-button").addClass('active')
+    } else if (scrollPosition >= $('#schedule').offset().top) {
+      $(".schedule.nav-button").addClass('active')
     } else if (scrollPosition >= $('#about').offset().top) {
       $(".about.nav-button").addClass('active')
     }
