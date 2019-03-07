@@ -648,3 +648,9 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.sponsor-sep {
+    border-bottom: 5px solid rgba(235,245,244, 0.8); 
+    width: 80%;
+    margin-left: 10%;
+}
