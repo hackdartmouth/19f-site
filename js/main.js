@@ -31,7 +31,7 @@ PineSchedule.load(".day-0", {
     {
       "time_range": "11am-11:30am",
       "name": "Opening Ceremony",
-      "location": "Cook Auditorium",
+      "location": "Zaleski Auditorium",
       "color": "#91AB61",
       "start": 11,
       "end": 11.5
@@ -39,7 +39,7 @@ PineSchedule.load(".day-0", {
     {
       "time_range": "11:30am-12pm",
       "name": "Team Formation",
-      "location": "Cook Auditorium",
+      "location": "Glycofi Auditorium",
       "color": "#CEE190",
       "start": 11.5,
       "end": 12
@@ -180,7 +180,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "2pm-3pm",
       "name": "Closing Ceremony",
-      "location": "Cook Auditorium",
+      "location": "Zaleski Auditorium",
       "color": "#D7E9BB",
       "start": 14,
       "end": 15
