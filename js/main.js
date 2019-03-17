@@ -6,7 +6,7 @@ PINE_SCHEDULE = {
   },
   DAY_0_START: 9,
   DAY_1_START: 0,
-  HOURS_TO_SHOW: 16.5,
+  HOURS_TO_SHOW: 15.5,
 
 };
 
@@ -29,56 +29,48 @@ PineSchedule.load(".day-0", {
       "end": 11
     },
     {
-      "time_range": "11am-11:30am",
+      "time_range": "11am-12pm",
       "name": "Opening Ceremony",
       "location": "Zaleski Auditorium",
       "color": "#91AB61",
       "start": 11,
-      "end": 11.5
-    },
-    {
-      "time_range": "11:30am-12pm",
-      "name": "Team Formation",
-      "location": "Glycofi Auditorium",
-      "color": "#CEE190",
-      "start": 11.5,
       "end": 12
     },
     {
-      "time_range": "12pm-1pm",
+      "time_range": "12pm-12:30pm",
       "name": "Hacking Begins; Lunch (sponsored by Facebook)",
       "location": "Glycofi Atrium",
       "color": "#D7E9BB",
       "start": 12,
-      "end": 13
+      "end": 12.5
     },
     {
-      "time_range": "1pm-2pm",
-      "name": "Intralinks Workshop: TBD",
+      "time_range": "12:30pm-1:30pm",
+      "name": "Intralinks Workshop: Intro to API",
       "location": "Zaleski Auditorium",
       "color": "#91AB61",
-      "start": 13,
-      "end": 14
+      "start": 12.5,
+      "end": 13.5
     },
     {
-      "time_range": "2pm-3pm",
-      "name": "Wayfair Workshop: TBD",
+      "time_range": "1:45pm-2:15pm",
+      "name": "Wayfair Workshop: Intro to React",
       "location": "Zaleski Auditorium",
       "color": "#CEE190",
       "start": 14,
-      "end": 15
+      "end": 14.5
     },
     {
-      "time_range": "3pm-4pm",
+      "time_range": "2:30pm-3:30pm",
       "name": "Appian Workshop: React Native",
       "location": "Zaleski Auditorium",
       "color": "#D7E9BB",
-      "start": 15,
-      "end": 16
+      "start": 14.5,
+      "end": 15.5
     },
     {
-      "time_range": "4pm-4:30pm",
-      "name": "Bioinformatics Workshop",
+      "time_range": "3:45pm-4:15pm",
+      "name": "Fun with Bioinformatics",
       "location": "Zaleski Auditorium",
       "color": "#91AB61",
       "start": 16,
@@ -94,19 +86,19 @@ PineSchedule.load(".day-0", {
     },
     {
       "time_range": "5pm-6pm",
-      "name": "Facebook Workshop: TBD",
+      "name": "Facebook Workshop: Technical Interviews and Resumes",
       "location": "Zaleski Auditorium",
       "color": "#D7E9BB",
-      "start": 17,
-      "end": 18
+      "start": 17.5,
+      "end": 18.5
     },
     {
-      "time_range": "6pm-7pm",
+      "time_range": "6:30pm-7:30pm",
       "name": "Dinner",
       "location": "Glycofi Atrium",
       "color": "#91AB61",
-      "start": 18,
-      "end": 19
+      "start": 18.5,
+      "end": 19.5
     },
     {
       "time_range": "7:30pm-9pm",
@@ -115,6 +107,14 @@ PineSchedule.load(".day-0", {
       "color": "#CEE190",
       "start": 19.5,
       "end": 21
+    },
+    {
+      "time_range": "9pm-9:30pm",
+      "name": "MLH Mini-activity",
+      "location": "Glycofi Atrium",
+      "color": "#D7E9BB",
+      "start": 21,
+      "end": 21.5
     },
     {
       "time_range": "11pm-12am",
@@ -154,23 +154,23 @@ PineSchedule.load(".day-1", {
       "end": 8
     },
     {
-      "time_range": "11am-12pm",
-      "name": "Lunch (sponsored by Intralinks)",
-      "location": "Glycofi Atrium",
-      "color": "#D7E9BB",
-      "start": 11,
-      "end": 12
-    },
-    {
-      "time_range": "12pm-12:30pm",
+      "time_range": "10:30am-11:30am",
       "name": "Submissions due",
       "location": "Glycofi Atrium",
       "color": "#CEE190",
-      "start": 12,
+      "start": 10.5,
+      "end": 11.5
+    },
+    {
+      "time_range": "11:30am-12:30pm",
+      "name": "Lunch (sponsored by Intralinks)",
+      "location": "Glycofi Atrium",
+      "color": "#D7E9BB",
+      "start": 11.5,
       "end": 12.5
     },
     {
-      "time_range": "4:15-5pm",
+      "time_range": "12:30-2pm",
       "name": "Introduce Judges, Demos, First-Round Judging",
       "location": "Glycofi Atrium",
       "color": "#91AB61",
@@ -178,20 +178,20 @@ PineSchedule.load(".day-1", {
       "end": 14,
     },
     {
-      "time_range": "2pm-3pm",
+      "time_range": "2pm-2:30pm",
+      "name": "Finalist Presentations",
+      "location": "Glycofi Atrium",
+      "color": "#CEE190",
+      "start": 14,
+      "end": 14.5
+    },
+    {
+      "time_range": "2:30pm-3:30pm",
       "name": "Closing Ceremony",
       "location": "Zaleski Auditorium",
       "color": "#D7E9BB",
-      "start": 14,
-      "end": 15
-    },
-    {
-      "time_range": "4pm-4:30pm",
-      "name": "Buses depart from Hanover",
-      "location": "Hop",
-      "color": "#CEE190",
-      "start": 16,
-      "end": 16.5,
+      "start": 14.5,
+      "end": 15.5
     }
   ]
 });
