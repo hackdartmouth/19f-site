@@ -70,7 +70,7 @@ PineSchedule.load(".day-0", {
     },
     {
       "time_range": "3:45pm-4:15pm",
-      "name": "Fun with Bioinformatics",
+      "name": "Google Workshop: TBD",
       "location": "Zaleski Auditorium",
       "color": "#91AB61",
       "start": 16,
