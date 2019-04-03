@@ -69,11 +69,11 @@ PineSchedule.load(".day-0", {
       "end": 15.5
     },
     {
-      "time_range": "3:45pm-4:15pm",
+      "time_range": "3:30pm-4:30pm",
       "name": "Google Workshop: TBD",
       "location": "Zaleski Auditorium",
       "color": "#91AB61",
-      "start": 16,
+      "start": 15.5,
       "end": 16.5
     },
     {
