@@ -70,7 +70,7 @@ PineSchedule.load(".day-0", {
     },
     {
       "time_range": "3:30pm-4:30pm",
-      "name": "Google Workshop: TBD",
+      "name": "Google Workshop: Google Cloud Platform and Machine Learning",
       "location": "Zaleski Auditorium",
       "color": "#91AB61",
       "start": 15.5,
@@ -78,7 +78,7 @@ PineSchedule.load(".day-0", {
     },
     {
       "time_range": "4:30pm-5pm",
-      "name": "Microsoft Workshop: TBD",
+      "name": "Microsoft Workshop: Resume Preparation",
       "location": "Zaleski Auditorium",
       "color": "#CEE190",
       "start": 16.5,
