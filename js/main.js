@@ -31,7 +31,7 @@ PineSchedule.load(".day-0", {
     {
       "time_range": "11am-12pm",
       "name": "Opening Ceremony",
-      "location": "Zaleski Auditorium",
+      "location": "Spanos Auditorium",
       "color": "#91AB61",
       "start": 11,
       "end": 12
@@ -188,7 +188,7 @@ PineSchedule.load(".day-1", {
     {
       "time_range": "2:30pm-3:30pm",
       "name": "Closing Ceremony",
-      "location": "Zaleski Auditorium",
+      "location": "Spanos Auditorium",
       "color": "#D7E9BB",
       "start": 14.5,
       "end": 15.5
