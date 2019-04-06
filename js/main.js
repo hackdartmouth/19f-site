@@ -23,7 +23,7 @@ PineSchedule.load(".day-0", {
     {
       "time_range": "9am-11am",
       "name": "Check-in",
-      "location": "Sponsors: Glycofi Atrium; Participants: Cook Auditorium",
+      "location": "Sponsors: Glycofi Atrium",
       "color": "#D7E9BB",
       "start": 9,
       "end": 11
