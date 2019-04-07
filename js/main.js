@@ -170,28 +170,28 @@ PineSchedule.load(".day-1", {
       "end": 12.5
     },
     {
-      "time_range": "12:30-2pm",
+      "time_range": "12:30-2:30pm",
       "name": "Introduce Judges, Demos, First-Round Judging",
       "location": "Glycofi Atrium",
       "color": "#91AB61",
       "start": 12.5,
-      "end": 14,
+      "end": 14.5,
     },
     {
-      "time_range": "2pm-2:30pm",
+      "time_range": "2:30pm-3:00pm",
       "name": "Finalist Presentations",
       "location": "Glycofi Atrium",
       "color": "#CEE190",
-      "start": 14,
-      "end": 14.5
+      "start": 14.5,
+      "end": 15
     },
     {
-      "time_range": "2:30pm-3:30pm",
+      "time_range": "3:00pm-4:00pm",
       "name": "Closing Ceremony",
       "location": "Spanos Auditorium",
       "color": "#D7E9BB",
-      "start": 14.5,
-      "end": 15.5
+      "start": 15,
+      "end": 16
     }
   ]
 });
