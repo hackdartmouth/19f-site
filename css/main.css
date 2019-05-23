@@ -169,7 +169,7 @@ body {
     max-height: 45vh;
     max-width: 70vh;
     float: right;
-    margin-left: 100%;
+    
     position: absolute;
     overflow: hidden;
     z-index: -1;

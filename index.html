@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>HackDartmouth V</title>
+        <title>HackDay III</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,7 +14,7 @@
 
         <link rel="shortcut icon" href="http://hackdartmouth.io/favicon.ico" type="image/x-icon">
         <!-- for Facebook -->
-        <meta property="og:title" content="HackDartmouth V"/>
+        <meta property="og:title" content="HackDay"/>
         <meta property="og:type" content="website"/>
         <meta property="og:image" content="http://hackdartmouth.io/img/header-fb.png"/>
         <meta property="og:image:width" content="1200"/>
@@ -23,7 +23,7 @@
         <meta property="og:url" content="http://hackdartmouth.io"/>
         <meta property="og:description" content="Register now for HackDartmouth V, April 6-7th."/>
     </head>
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:100px;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0px;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -37,9 +37,9 @@
               <div id="lol"><img id="lol-img" onclick="hehehe()" src="img/lol.gif"></div>
             <div class="col-md-12 text-center">
               <div id="welcome-block">
-                <h1 id="welcome-title">HackDartmouth V</h1>
-                <h4 id="date">April 6-7, 2019</h4>
-                <h4>Thayer School of Engineering</h4>
+                <h1 id="welcome-title">HackDay III</h1>
+                <h4 id="date">October 5, 2019</h4>
+                <h4>Sarner Underground</h4>
 <!--                 <h5> Interested in being a HackDartmouth Organizer? Sign up <a href="https://goo.gl/forms/fi2CEjMzJqv9Gi8K2">here!</a></h5> -->
 
               </div>
@@ -47,8 +47,8 @@
           </div>
 
           <!-- Navigation -->
-          <nav id="placeholderNav" class="navbar navbar-default navigation row text-center"></nav>
-          <nav id="myNav" class="navbar navbar-default navigation row text-center">
+          <nav id="placeholderNav" class="navbar navbar-default navigation row text-center" hidden></nav>
+          <nav id="myNav" class="navbar navbar-default navigation row text-center" hidden>
             <div class="container-fluid">
               <div class="navbar-header">
                 <button id="myButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapsible-menu" aria-expanded="false">
@@ -62,16 +62,16 @@
                 <ul class="nav nav-justified">
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#">ABOUT</a></div></li>
                   
-                  <li hidden><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>
+                  <!-- <li hidden><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#">SCHEDULE</a></div></li>
                  
-                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div></li>
-                  <!--
+                  <li hidden><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#">FAQ</a></div></li>
+                  
                   <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s4" class="tracks nav-button" onclick="jumpToSection(event, this.id)" href="#">TRACKS</a></div></li>
+                  
+                  <li hidden><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s5" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div></li>
+                  
+                  <li hidden><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s6" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">REGISTER</a></div></li>
                   -->
-                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s5" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#">SPONSORS</a></div></li>
-                  
-                  <li ><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s6" class="apply nav-button" onclick="jumpToSection(event, this.id)" href="#">REGISTER</a></div></li>
-                  
                 </ul>
               </div>
             </div>
@@ -85,11 +85,11 @@
                   <h1>{ ABOUT }</h1>
                 </div>
               </div>
-              <div class="about-body">
-                <div id="background-left" class="hidden-xs">
+              <div class="about-body" >
+                <div id="background-left" class="hidden-xs" hidden>
                   <img src="img/tabletop.png" class="about-image">
                 </div>
-                <div id="background-right" class="hidden-xs">
+                <div id="background-right" class="hidden-xs" hidden>
                   <img src="img/keyboard.png" class="about-image" style="margin-left: 10%">
                 </div>
                 <div class="main-text">
@@ -111,7 +111,8 @@
           </div>
           <br />
           <!-- Schedule -->
-          <div id="schedule" class="row">
+          <!--
+          <div id="schedule" class="row" hidden>
             <div class="col-md-12">
               <div class="section-header row text-center">
                 <div class="col-md-12">
@@ -126,9 +127,10 @@
                 </div>
               </div>
             </div>
-
+			-->
           <!-- FAQ -->
-          <div id="faq" class="row">
+          <!--
+          <div id="faq" class="row" hidden>
             <br />
             <div class="col-xs-1 sublime">
               <ul id="sidebar">
@@ -267,7 +269,7 @@
 
             </div>
           </div>
-
+			-->
 
           <!-- Tracks -->
           <div id="tracks" class="row" hidden>
@@ -301,7 +303,7 @@
 
 
           <!-- Sponsors -->
-          <div id="sponsors" class="row">
+          <div id="sponsors" class="row" hidden>
           	<div class="col-md-12 text-center">
               <div class="section-header row">
                 <div class="col-md-12">
@@ -356,7 +358,7 @@
               <br />
             </div>
             
-            <div class="col-md-12 text-center" >
+            <div class="col-md-12 text-center" hidden>
               <div class="section-header row">
                 <div class="col-md-12">
                   <h1>{ PARTNERS }</h1>
@@ -387,7 +389,7 @@
           </div>
 
           <!-- Apply -->
-          <div id="apply" class="row" >
+          <div id="apply" class="row" hidden>
             <div class="col-md-12 text-center">
               <div class="section-header row">
                 <div class="col-md-12">
@@ -433,6 +435,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-60214500-1','auto');ga('send','pageview');
         </script>
-
+     
     </body>
 </html>
